@@ -1,0 +1,79 @@
+// body {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//   }
+  
+  .Anavbar-div {
+    width: 100%;
+    height: 722px;
+    background-image: url('Image/background image.jpg');
+  }
+  
+  .Abox-wrapper {
+    background-color: #1da1f2;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+  
+    .Alogo {
+      width: 180px;
+      height: 150px;
+      position: absolute;
+      margin-left: 120px;
+    }
+  
+    .Alinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      position: absolute;
+      left: 400px;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+  
+      .Anav-link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  
+    .Anavbtn {
+      font-family: "DM Sans", sans-serif;
+      width: 170px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 16px;
+      border-radius: 1px;
+      color: black;
+      position: absolute;
+      margin-left: 1110px;
+      text-align: center;
+      border: 1px solid #ffffff4d;
+    }
+  }
+  
+  .Ahead-section {
+    text-align: center;
+    padding: 20px;
+  
+    .AheadingAA h1 {
+      margin-bottom: 10px;
+      font-size: 4em;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+  
+    .AheadingAB h4 {
+      font-size: 1.2em;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+  }
+  
