@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAMA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACLJ","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["_Sekhar.scss","main.scss"],"names":[],"mappings":"AAAA;EACO;EACA;;AACD;EACE;EACA;EACA;EACA;;AAEJ;EACI;EACC;EACA;;AAGL;EACI;EACA;EACA;EACF;EACC;EACA;EACD;;AAGF;EACI;EACA;EACA;EACA;;;ACvBR;EACI;EACA;EACA","file":"main.css"}
