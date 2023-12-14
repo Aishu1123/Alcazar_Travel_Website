@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.Anavbar-div {
+  width: 100%;
+  height: 1000px; 
+  /* height: 722px; */
+  background-image: url('Image/background image.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.Abox-wrapper {
+ width: 100%;
+  height: 50px;
+  padding-top: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+ 
+
+  .Alogo {
+    width: 180px;
+    height: 150px;
+    position: absolute;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+
+  
+  .Alinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    position: absolute;
+    left: 340px;
+    font-size: 18px;
+   
+  
+    .Anav-link {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.3s ease; 
+  
+      &:hover {
+        transform: scale(1.2); 
+        text-decoration: underline;
+      }
+    }
+  }
+
+  
+  .button-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.Anav_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    transition: transform 0.3s ease; 
+   
+}
+
+.Anav_button:hover {
+    text-decoration: underline;
+    transform: scale(1.2); 
+}
+
+ 
+}
+
+.Ahead-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+
+  .AheadingAA h1 {
+    margin-bottom: 10px;
+    font-size: 4em;
+    color: white;
+    
+  }
+
+  .AheadingAB h4 {
+    font-size: 1em;
+    color: white;
+    
+  }
+}
+
+ .Acontainer {
+  margin: 70px 0px 30px 280px;
+}
+
+.Acontainer .Asearch-bar {
+  background: white;
+  width: 65%;
+  margin-left: 40px;
+  height: 6vh;
+  border-radius: 50px;
+  padding: 10px 8px 10px 30px;
+  border: 14px solid rgba(128, 128, 128, 0.395);
+  display: flex;
+  flex-direction: row; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+.Acontainer .Asearch-bar form {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex: 1; 
+}
+
+.Acontainer .Asearch-bar form input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid lightgray; 
+  background: transparent;
+  cursor: pointer;
+}
+
+#As-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+color: white;
+width: 40px; 
+height: 40px; 
+background-color: #1ca0e3;
+border-radius: 50%;
+font-size: 16px; 
+border: none; 
+}
+
+.material-symbols-outlined {
+font-size:40px !important;
+margin-right: 10px;
+padding-top: 5px;
+}
+
+
+
