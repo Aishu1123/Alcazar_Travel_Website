@@ -214,20 +214,5 @@
             "title": "json-server- Balbir the third", 
             "author": "IIT"
        }
-    ],
-    "comments" : [
-        { "id" : 1, 
-
-        "body" : "some comment", 
-        "postId": 1
-        },
-        { "id" : 2, 
-        "body" : "some other comment", 
-        "postId": 2
-        }
-      ],
-    "profile": 
-      {   
-        "name": "typicode"
-      }
+    ]
 }

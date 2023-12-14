@@ -1,5 +1,89 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}/*# sourceMappingURL=main.css.map */
+.First-part {
+  text-align: center;
+  margin: 40px;
+}
+.First-part .vacation {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  margin: 30px;
+  font-size: 20px;
+}
+.First-part .small-p-tag {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: grey;
+  font-size: 20px;
+}
+.First-part .button {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  border: solid 1px rgb(206, 196, 196);
+  background-color: white;
+  color: #000;
+}
+.First-part #blue-btn {
+  background-color: #2c73d0;
+  color: white;
+  border-radius: 55%;
+  padding: 20px;
+}
+
+.data-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -10px;
+}
+.data-list-wrapper .box {
+  border: solid black 1px;
+  padding: 20px;
+  border-radius: 8px;
+  padding: 15px;
+  height: 200px;
+  text-align: center;
+  width: 200px;
+}
+.data-list-wrapper .box img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.pagination-wrapper {
+  margin: 10px;
+  display: flex;
+  gap: 100px;
+  flex-direction: row;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.pagination-wrapper .page-button {
+  border: solid black 1px;
+  padding: 20px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.pagination-wrapper #Back-btn {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  width: 70px;
+  text-align: center;
+}
+.pagination-wrapper #Next-btn {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  height: 20px;
+  width: 70px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
