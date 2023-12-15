@@ -1,0 +1,61 @@
+body {
+  background-image: url("e5155fde000d8088b153efb626fa71ce.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav #reg {
+  background-color: rgb(9, 90, 141);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 20px auto;
+  gap: 10px;
+}
+body form h1 {
+  color: rgb(9, 79, 122);
+  text-align: center;
+}
+body form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+body form input::placeholder {
+  text-align: left;
+}
+
+#reg:hover {
+  background-color: rgb(4, 32, 41);
+}
+
+#login {
+  background-color: rgb(9, 90, 141);
+  color: white;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#login:hover {
+  background-color: rgb(4, 32, 41);
+}
+
+/*# sourceMappingURL=login.css.map */
