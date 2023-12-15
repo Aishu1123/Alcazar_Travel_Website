@@ -36,6 +36,9 @@ body form input {
   border-radius: 5px;
   border: 1px solid black;
 }
+body form input::-moz-placeholder {
+  text-align: left;
+}
 body form input::placeholder {
   text-align: left;
 }
@@ -56,6 +59,4 @@ body form input::placeholder {
 
 #login:hover {
   background-color: rgb(4, 32, 41);
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */
