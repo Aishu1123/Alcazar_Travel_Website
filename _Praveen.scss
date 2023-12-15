@@ -35,3 +35,23 @@
     padding: 10px;
     border-radius: 15px;
   }
+  @media all and (min-width:375px) and (max-width:670px){
+    #safe,#flightprice,#pass,#Easy,#stay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(109, 120, 133);
+        font-size: 18px;
+        gap: 20%;
+        }
+
+        #safe:hover,
+    #flightprice:hover,
+    #pass:hover,
+    #Easy:hover,
+    #stay:hover {
+        transform: scale(1.05); 
+        transition: transform 0.3s ease; 
+    }
+ }
