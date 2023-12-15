@@ -1,0 +1,82 @@
+body{
+    background-image: url('e5155fde000d8088b153efb626fa71ce.jpg');
+    background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+
+
+      nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin:  auto;
+    gap:10px;
+
+
+
+    #reg:hover{
+        background-color: rgb(4, 32, 41);
+    }
+}
+
+
+h1{
+    color: rgb(9, 79, 122);
+    text-align: center;
+    
+}
+
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+input::placeholder{
+    text-align: left;
+}
+}
+button{
+    padding: 8px;
+    background-color: rgb(9, 90, 141);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+    #log{
+        background-color: rgb(9, 90, 141);
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+
+
+    
+    }
+        
+    #log:hover{
+        background-color: rgb(4, 32, 41);
+    }
+
+
+
+
+
+
+
+
+  
+  
