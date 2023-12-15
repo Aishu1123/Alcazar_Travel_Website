@@ -1,5 +1,59 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}/*# sourceMappingURL=main.css.map */
+#safe, #flightprice, #pass, #Easy, #stay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(109, 120, 133);
+  font-size: 18px;
+  gap: 20%;
+}
+
+#safe:hover,
+#flightprice:hover,
+#pass:hover,
+#Easy:hover,
+#stay:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+img {
+  height: 300px;
+  width: 450px;
+}
+
+h1 {
+  color: black;
+  font-weight: 1000;
+}
+
+#rm {
+  background-color: rgb(95, 95, 227);
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media all and (min-width: 375px) and (max-width: 670px) {
+  #safe, #flightprice, #pass, #Easy, #stay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 120, 133);
+    font-size: 18px;
+    gap: 20%;
+  }
+  #safe:hover,
+  #flightprice:hover,
+  #pass:hover,
+  #Easy:hover,
+  #stay:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
