@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "start": "json-server --watch database.json",
     "live": "npm run start"
+
+    "start": "json-server --watch database.json", 
+    "server": "json-server --watch databse.json"
+
   },
   "repository": {
     "type": "git",
