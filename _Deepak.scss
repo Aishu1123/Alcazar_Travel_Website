@@ -11,7 +11,12 @@
   
     >#dhead{
       display: grid; 
-      grid-template-columns: 15% 70% 15%
+      grid-template-columns: 15% 70% 15%;
+      width: 100%;
+    }
+    .dArrowsImage{
+      width: 158px;
+      height: 43px;
     }
   
     div>h1{
@@ -26,6 +31,8 @@
       grid-template-columns: repeat(3, 1fr);
       margin-top: 50px;
       gap: 40px;
+
+
       
       
       :hover{
@@ -68,7 +75,8 @@
             }
           }
           .leftPartOfCard{    
-            display: flex;     
+            display: flex;  
+            flex-wrap: wrap;   
             img{
               width: 25px;
               height: 28px;
@@ -100,11 +108,11 @@
   }
   
   #above-footer{
-    margin: 100px 0;
+    margin: 100px 0 50px;
     width: 100%;
   
     #footer-IMG{
-      width: 80%;
+      width: 100%;
       margin: 100px auto 0;
       img{
         width: 100%;
