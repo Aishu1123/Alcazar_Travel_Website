@@ -1,27 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGINpage</title>
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+
+ 
     <div>
         <nav>
-            <a id="logoal" href=""><img src="icon.png" alt="tohome"></a>
-            <a id="reg" href="http://127.0.0.1:5500/registerlogin/register.html">REGISTER</a>
+            <a href="../index.html"><img src="alcalogo.png" alt=""></a>
         </nav>
+    </div>
 
-        <form id="regform">
-            <h1>LOGIN TO ALCAZAR</h1>
-                <input type="text" id="username" placeholder="Enter Username" required>
-                <input type="password" id="password" placeholder="Enter Password" required>
-                <button id="login" type="button">LOGIN</button>
+    <div class="regform">
+        <form>
+            <h1>Login To Continue</h1>
 
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <div class="log">
+                <button id="log" type="submit"><strong> LOGIN </strong></button>
+            </div>
+
+            <div class="regbut">
+                <a href="register.html">REGISTER</a>
+            </div>
         </form>
     </div>
-    <script src="login.js"></script>
 
+    <script src="login.js"></script>
 </body>
 </html>
