@@ -1,29 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "main.scss"/>
+    <link rel = "stylesheet" href = "style.css"/>
     <title>CardPage</title>
 </head>
 <body>
-         <div class = "header">
-                <img src = "https://cdn.britannica.com/64/153464-050-551A86F7/Rialto-Bridge-Grand-Canal-Venice.jpg" alt =  "italy">
-         </div>
+
+    <div class="Anavbar-div">
+        <div class="Abox-wrapper">
+            <img class="Alogo" src="Image/logo.png" alt="Logo">
+            <div class="Alinks">
+                <a href="#" class="Anav-link">Download App</a>
+                <a href="#" class="Anav-link">About Us</a>
+                <a href="#" class="Anav-link">Installment</a>
+                <a href="#" class="Anav-link">Packages</a>
+                <a href="#" class="Anav-link">My Booking</a>
+                <div class="button-container">
+
+                    <button class="Anav_button" id="signupButton">Sign Up</button>
+                    <button class="Anav_button" id="loginButton">Login</button>
+                </div>
+
+                <!-- <div class="Anhiddenmenu">
+                    <img src="Image/menu.png" alt="" />
+                  </div> -->
+            </div>
+        </div>
+    </div>
          <div class = "flex-Done"> 
             <div class = "flex-box-info">
                 <div id = "location-price">
                     <h4 id = "location" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;">
-                        Enter a location name
+                       
                     </h4>
                    <p id = "cost-hotel" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;  margin-top: 50px; ">
-                     Enter a cost
+                     
                    </p>
                 </div>
     
                <div id = "location-details" style = "font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin: 20px; margin-left: 40px;">
-                     Enter location detail
+                    
                </div>
                <div class = "information">
                 <div id = "info" style = "font-family: Arial, Helvetica, sans-serif; font-size: 25px; margin-left: 40px;">
@@ -73,9 +91,9 @@
                     </tr>
                 </table>
                </div>
- 
+               <p style="margin: 40px; font-size: 40px;">Gallery</p>
               <div class = "location-rel-images">
-              
+               
                 <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://media.cnn.com/api/v1/images/stellar/prod/170523170835-venice-1718664.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618" alt = "italy">
                 <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://www.roadaffair.com/wp-content/uploads/2017/10/kabukicho-tokyo-japan-shutterstock_637989430.jpg" alt = "japan">
                 <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://static.toiimg.com/photo/msid-102101595,width-96,height-65.cms" alt = "morocco">
@@ -85,7 +103,7 @@
             </div>
               
             <div class = "right-part-disco">
-                <button style = " font-size: 30px; padding: 10px; color: white; border: solid 1px transparent; background-color: skyblue; border-radius: 15px; font-family: Arial, Helvetica, sans-serif; cursor: pointer; "id = "book-now">
+                <button style = " font-size: 30px; padding: 10px; color: black; border: solid 1px transparent; background-color: skyblue; border-radius: 15px; font-family: Arial, Helvetica, sans-serif; "id = "book-now">
                     Book Now
                 </button>
                 <div class = "discount">
@@ -94,8 +112,28 @@
                 </div>
             </div>
         </div>
+
+        <script>
+                const bookNowButton = document.getElementById('book-now');
+
+                bookNowButton.addEventListener('click', () =>{
+                    window.location.href = 'mybooking.html';
+                })
+                 const LocationName = document.getElementById('location')
+                 LocationName.textContent = locations.location;
+
+                 const LocationPrice = document.getElementById('cost-hotel')
+                 LocationPrice.textContent = locations.price;
+
+                 const LocationDesc = document.getElementById('location-details')
+                 LocationDesc.textContent = locations.description;
+
+        </script>
 </body>
 </html>
+
+
+
 
 
 
