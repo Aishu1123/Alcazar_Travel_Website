@@ -4,10 +4,15 @@
 let registerButton = document.getElementById("reg");
 registerButton.addEventListener("click", registerUser);
 
+document.getElementById('log').addEventListener('click', function(event) {
+  
+});
+
+
+
 function registerUser(event) {
     event.preventDefault(); 
 
-    // Gather user input values
     const username = document.getElementById('regusername').value;
     const email = document.getElementById('regmail').value;
     const contact = document.getElementById('regcontact').value;

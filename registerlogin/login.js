@@ -1,7 +1,8 @@
 
 
-let loginButton = document.getElementById("login");
+let loginButton = document.getElementById("log");
 loginButton.addEventListener('click', loginUser)
+
 
 function loginUser(event) {
     event.preventDefault(); 
