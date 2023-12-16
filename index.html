@@ -23,11 +23,18 @@
                 <a href="#" class="Anav-link">Packages</a>
                 <a href="#" class="Anav-link">My Booking</a>
                 <div class="button-container">
-                    <button class="Anav_button">Sign Up</button>
-                    <button class="Anav_button">Login</button>
+
+                    <button class="Anav_button" id="signupButton">Sign Up</button>
+                    <button class="Anav_button" id="loginButton">Login</button>
                 </div>
+
+                <!-- <div class="Anhiddenmenu">
+                    <img src="Image/menu.png" alt="" />
+                  </div> -->
             </div>
+
         </div>
+
 
         <div class="Ahead-section">
             <div class="AheadingAA">
@@ -41,18 +48,24 @@
 
         <div class="Acontainer">
             <div class="Asearch-bar">
-                <form id="form">
+                <form id="form" onsubmit="handleOnSubmit(event)">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input id="Ainput" type="text" placeholder="City, destination, or hotel name">
+
+                    <input id="search" type="text" placeholder="City, destination, or hotel name">
                     <input id="Acheckin" type="date" placeholder="Add date">
                     <input id="Aguest" type="number" placeholder="Add Guest">
+
                     <div class="input-group" id="As-btn">
-                        <input type="button">
-                        <span class="material-symbols-outlined">Search</span>
+                        <input type="submit" />
+
+                        <span type="submit" class="material-symbols-outlined">Search</span>
                     </div>
                 </form>
             </div>
         </div>
+
+
+
     </div>
 
     <!-- Sekhar -->
@@ -437,7 +450,7 @@
 
 
 
-
+    <script src="search.js"></script>
     <script src="script.js"></script>
 </body>
 
