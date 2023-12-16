@@ -2,7 +2,6 @@
 
 const locationurl = 'https://mock-api-templated-copy.onrender.com/locations';
 
-let page = 1;
 
 
 
