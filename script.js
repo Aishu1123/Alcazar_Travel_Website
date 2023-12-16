@@ -1,6 +1,6 @@
 
 
-const locationurl = 'https://mock-api-modified.onrender.com/locations';
+const locationurl = 'https://mock-api-templated-copy.onrender.com/locations';
 
 let page = 1;
 

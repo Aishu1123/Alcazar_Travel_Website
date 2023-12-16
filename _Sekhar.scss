@@ -1,6 +1,5 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .First-part {
@@ -38,7 +37,6 @@ body{
 }
 
 #data-list-wrapper{
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
      gap: 30px; 
@@ -89,50 +87,63 @@ body{
        background-color: white;
         
      }
-     
-  
-
 }
 
 .header img {
-  height : 620px;
-  width: 1440px;
-  margin: 0;
+  height: 550px;
+  width: 1442px;
+  margin: -10px;
 }
 
 .flex-Done{
   display: flex;
   flex-direction: row;
-  gap: 400px;
+  gap: 40%;
+}
+#info{
+  display: flex;
+  gap: 2%;
+}
+.right-part-disco{
+  margin-top: 50px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
 
-  .flex-box-info{
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-  }
+}
+.location-rel-images{
+  display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin: 17px;
 
-  .right-part-disco{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-
-  }
-   .location-rel-images{
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    
-   }
-
-   .discount img{
-      height: 100px;
-      width: 100px;
-     
-    }
-      .discount > p{
-         font-size: 25px;
-
-      }
 }
 
+#location-price{
+    display: flex;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.included-list {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}
+
+#book-now :hover{
+  background-color: black;
+}
