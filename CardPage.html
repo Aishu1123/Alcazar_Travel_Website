@@ -1,58 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "main.css"/>
+    <link rel = "stylesheet" href = "main.scss"/>
     <title>CardPage</title>
 </head>
 <body>
          <div class = "header">
-             <div class = "image">
                 <img src = "https://cdn.britannica.com/64/153464-050-551A86F7/Rialto-Bridge-Grand-Canal-Venice.jpg" alt =  "italy">
-                
-             </div>
          </div>
          <div class = "flex-Done"> 
             <div class = "flex-box-info">
-                <h1 id = "location" style = "font-size: 60px; margin-top: -20px;">
-                    Enter a location name
-                </h1>
- 
-               <div id = "cost-hotel" style = "font-size: 30px; margin-top: -10px;">
-                 Enter a cost
-               </div>
- 
-               <div id = "location-details" style = "font-size: 30px; margin-top: 10px;">
-                 Enter location detail
+                <div id = "location-price">
+                    <h4 id = "location" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;">
+                        Enter a location name
+                    </h4>
+                   <p id = "cost-hotel" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;  margin-top: 50px; ">
+                     Enter a cost
+                   </p>
+                </div>
+    
+               <div id = "location-details" style = "font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin: 20px; margin-left: 40px;">
+                     Enter location detail
                </div>
                <div class = "information">
-                <div id = "info" style = "font-size: 30px; margin-top: 10px;">INFORMATION</div>
-                 <table style="border-collapse: collapse; font-size: 30px; margin-top: -10px;">
-                     <tr>
-                         <td>Destination</td>
-                         <td id = "dest">Row 1, Column 2</td>
-
-                     </tr>
-                     <tr>
-                         <td>Departure</td>
-                         <td>Row 2, Column 2</td>
-                        
-                     </tr>
-                     <tr>
-                         <td>Departure Time</td>
-                         <td>Row 3, Column 2</td>
-                     </tr>
-                     <tr>
-                         <td>Arrival Time Time</td>
-                         <td>Row 4, Column 2</td>
-                     </tr>
-                     <tr>
-                         <td>Baggage & Facilities</td>
-                         
-                         <td>Row 6, Column 2</td>
-                     </tr>
-                 </table>
+                <div id = "info" style = "font-family: Arial, Helvetica, sans-serif; font-size: 25px; margin-left: 40px;">
+                    <img src = "i.png" alt = "i">
+                   <div style="font-size: 20px;">INFORMATION</div>
+                </div>
+                 <table style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px; margin-top: 40px; margin-left: 40px; ">
+                    <tr>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Destination</td>
+                        <td>Rialto Bridge, Italy</td>
+                    </tr>
+                    <tr>
+                        <td>Departure</td>
+                        <td>Main Square, Old Town</td>
+                    </tr>
+                    <tr>
+                        <td>Departure Time</td>
+                        <td>Appr. 8.30AM</td>
+                    </tr>
+                    <tr>
+                        <td>Return Time</td>
+                        <td>Appr. 7.30PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dress Code</td>
+                        <td>Casual, Comfortable and Light</td>
+                    </tr>
+                </table>
+            
+                <table style=" margin: 40px; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px;">
+                    <tr>
+                        <th>Included</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul  style = "margin: 25px;"class="included-list">
+                                <li>5Star Accommodation</li>
+                                <li>Airport Transfer</li>
+                                <li>Breakfast</li>
+                                <li>Personal Guide</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
                </div>
  
               <div class = "location-rel-images">
@@ -66,17 +85,17 @@
             </div>
               
             <div class = "right-part-disco">
-                <button href = "index.html"style = " font-size: 30px; padding: 10px; color: white; border: solid 1px transparent; background-color: skyblue; border-radius: 15px; font-family: Arial, Helvetica, sans-serif; " class = "book-now">
+                <button style = " font-size: 30px; padding: 10px; color: white; border: solid 1px transparent; background-color: skyblue; border-radius: 15px; font-family: Arial, Helvetica, sans-serif; cursor: pointer; "id = "book-now">
                     Book Now
                 </button>
                 <div class = "discount">
-                    <img style = "font-size: 30px; margin-top: -10px; " src = "https://img.freepik.com/premium-vector/sale-offer-label-banner-discount-offer-promotion_157027-1265.jpg" alt = "discount">
-                    <p> 50 % OFF on Code</p>
+                    <img style = "justify-content: right; height :200px; width : 200px; margin-top: -10px; " src = "https://img.freepik.com/premium-vector/sale-offer-label-banner-discount-offer-promotion_157027-1265.jpg" alt = "discount">
+                    <p> 50 % OFF on Masai 50</p>
                 </div>
             </div>
         </div>
-
-         
-
 </body>
 </html>
+
+
+
