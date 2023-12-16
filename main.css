@@ -149,10 +149,12 @@ body {
   display: grid;
   grid-template-columns: 15% 70% 15%;
   width: 100%;
+
 }
 #above-above-footer .dArrowsImage {
   width: 158px;
   height: 43px;
+
 }
 #above-above-footer div > h1 {
   font-size: 35px;
@@ -428,6 +430,10 @@ body {
 }
 
 footer {
+
+  width: 100%;
+  margin-top: 0%;
+
   background-color: #1BA0E2;
   padding: 40px;
   color: rgba(255, 255, 255, 0.979);
@@ -447,6 +453,7 @@ footer {
 #alca img {
   width: 190px;
   height: 60px;
+
 }
 
 #alca h2 {
