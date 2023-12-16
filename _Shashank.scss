@@ -1,11 +1,14 @@
 footer {
+
   width: 100%;
-    margin-top: 0%;
     background-color: #1BA0E2; 
     padding: 40px;
-    color: rgba(221, 218, 218, 0.979);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.979);
+    max-width: 100%;
+
+    
   }
+  
   #noo {
     display: flex;
     margin-bottom: 20px;
@@ -15,13 +18,14 @@ footer {
     display: flex;
   }
   #alca img {
-    width:120px;
-    height: 100px;
-   
+    width: 190px;
+    height: 60px;
+
   }
   #alca h2 {
     margin-top: 0.2%;
     margin-left: 2%;
+    
   }
   #no {
     width: 40%;
@@ -31,6 +35,7 @@ footer {
   #no p {
     text-align: left;
     margin-top: 6%;
+    line-height: 25px;
   }
   #yess {
     display: flex;
@@ -55,6 +60,10 @@ footer {
   margin-left: 40px;
   width: 92%; /* Ensure it takes full width */
   padding-right: 20px;
+
+  p{
+    margin-left: 41px;
+  }
   }
   
   /* respnsiveness */
@@ -163,8 +172,8 @@ footer {
     .image-container {
       display: none;
     }
-    #footer {
-      width: 10%;
+    footer {
+      width: 100%;
       margin-left: 10px;
       position: absolute;
     }
