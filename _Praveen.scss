@@ -67,6 +67,13 @@
         color: white;
         font-size: 16px;
         font-weight: 600;
+        transition: all 0.3s ease-out;
+
+        
+      }
+      .cta-button:hover{
+        background-color: red;
+        width: 145px;
       }
   
       @media (min-width: 768px) {

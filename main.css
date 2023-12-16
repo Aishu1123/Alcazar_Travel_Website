@@ -300,6 +300,11 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+.mid_section .text-content .cta-button:hover {
+  background-color: red;
+  width: 145px;
 }
 @media (min-width: 768px) {
   .mid_section .text-content {
