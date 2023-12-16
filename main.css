@@ -148,6 +148,7 @@ body {
 #above-above-footer > #dhead {
   display: grid;
   grid-template-columns: 15% 70% 15%;
+  width: 100%;
 }
 #above-above-footer div > h1 {
   font-size: 35px;
@@ -403,6 +404,7 @@ body {
 }
 
 footer {
+  width: 100%;
   margin-top: 0%;
   background-color: #1BA0E2;
   padding: 40px;
@@ -421,7 +423,8 @@ footer {
 }
 
 #alca img {
-  width: 10%;
+  width: 120px;
+  height: 100px;
 }
 
 #alca h2 {
