@@ -1,82 +1,178 @@
-body{
-    background-image: url('e5155fde000d8088b153efb626fa71ce.jpg');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap');
+body {
+    background: url(img.jpg);
     background-size: cover;
-      background-position: center;
-      height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 
-      nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-}
-
-
-form{
+.regform {
+    margin: 20px auto;
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin:  auto;
-    gap:10px;
-
-
-
-    #reg:hover{
-        background-color: rgb(4, 32, 41);
-    }
-}
-
-
-h1{
-    color: rgb(9, 79, 122);
-    text-align: center;
-    
-}
-
-
-input{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid black;
-
-input::placeholder{
-    text-align: left;
-}
-}
-button{
-    padding: 8px;
-    background-color: rgb(9, 90, 141);
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background: transparent;
+    width: 450px;
+    height: 550px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
     color: white;
-    border-radius: 10px;
-    text-decoration: none;
-    border: none;
-}
-    #log{
-        background-color: rgb(9, 90, 141);
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-        border-radius: 10px;
+
+    h1 {
+        font-size: 25px;
         text-align: center;
-        font-size: 16px;
+        color: white;
+    }
 
+    .input-box {
+        position: relative;
+        margin: 20px;
+    }
 
+    .input-box i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+    }
+
+    .input-box input {
+        background: transparent;
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        border: 2px solid rgba(10, 9, 9, 0.2);
+        padding: 15px;
+        padding-right: 30px;
+        color: white;
+    }
+
+    .input-box input::placeholder {
+        color: white;
+    }
+
+    .regbut {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px; 
+    }
+
+    button#reg {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    button#reg:hover {
+        background-color: rgb(51,10,106);
+        color: white;
+    }
+
+    .log {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    button#log {
+        text-decoration: none; 
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    button#log a {
+        text-decoration: none; 
+        color: black; 
+        display: block; 
+        width: 100%;
+        height: 100%;
+    }
+
+    button#log:hover,
+    button#log:hover a{ 
+        background-color: rgb(51,10,106);
+        color: white;
+    }
     
+}
+
+
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    body {
+        background-size: contain;
+        font-size: 16px;
     }
-        
-    #log:hover{
-        background-color: rgb(4, 32, 41);
+
+    .regform {
+        width: 70%; 
+        max-width: 355px; 
+        height: auto;  
+        padding: 5px; 
+    }
+
+    .input-box {
+        margin: 15px 0; 
+    }
+
+   
+
+    .input-box input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .input-box input::placeholder {
+        opacity: 0.7;
+    }
+
+    .regbut {
+        margin-top: 15px; 
+    }
+
+    button#reg {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .log {
+        margin-top: 15px; 
+    }
+
+    button#log {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    button#log a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-decoration: none;
+        color: black;
     }
 
 
-
-
-
-
-
-
-  
-  
+    nav{
+        text-align: center;
+    }
+}
