@@ -5,10 +5,13 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  .Annavbar-div {
+  .Anavbar-div {
     width: 100%;
     height: 1000px; 
-    }
+    
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
   
   .Aboxx-wrapper {
    width: 100%;
@@ -72,14 +75,13 @@ body {
     padding: 20px;
   }
 
-
 .card {
     border: 2px solid white;
     border-radius: 20px;
     padding: 16px;
     margin: 16px;
     width: 200px;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -119,6 +121,46 @@ body {
 .card:hover p {
     max-height: 1000px; 
 }
+/* ssf */
+.ssf{
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin :auto;
+  justify-content: center;
+  gap:30px;
+}
+.s-bar, .sorting-options {
+  margin-right: 10px; 
+}
+.sorting-options label {
+  margin-right: 5px;
+}
+
+.sorting-options select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.s-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#sBtn {
+  background-color:rgb(189, 189, 246);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
 /* Shashank */
 
 footer {

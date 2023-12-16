@@ -1,55 +1,34 @@
 
 
+
+
 const url = 'https://mock-api-templated-copy.onrender.com/locations';
-//  let data = [];
+let searchArea = document.getElementById("Search_area");
+let form = document.getElementById("form");
 
-
-let searchArea = document.getElementById("Search_area");  
-
-async function fetchData(page,searchData=""){
-    try{
-        let res = await fetch(`${url}?_page=${page || 1}&${searchData}`);
+async function fetchData(page, searchData = "") {
+    try {
+        let searchQuery = new URLSearchParams(window.location.search).get("query");
+        let res = await fetch(`${url}?_page=${page || 1}&${searchData}&location_like=${searchQuery}`);
         let data = await res.json();
-         console.log(data);
-        appendData(data)
-    }
-    catch(err){
+        appendData(data);
+    } catch (err) {
         console.log(err);
     }
-  }
-  let container = document.getElementById("container");
-let form = document.getElementById("form");
-document.getElementsByClassName("material-symbols-outlined")
-function handleOnSubmit(event) {
-   event.preventDefault();
-   let text = form.search.value;
-   let query = text.toLowerCase();
-    window.location.href = "./search.html";
-    let searchData = data.filter((el) => el.location.toLowerCase().includes(query));
-
-  localStorage.setItem("searchresult",text);
-  window.location.href = "./search.html";
-  fetchData(1,`location_like=${text}`);
 }
 
-
-
-  function appendData(data){
+function appendData(data) {
     data.forEach(item => searchArea.append(createCard(item)));
-    
-  }
+}
 
 function createCard(data) {
-    
     const card = document.createElement('div');
     card.className = 'card';
 
-   
     const image = document.createElement('img');
     image.src = data.image;
     image.alt = data.location;
 
-    
     const heading = document.createElement('h3');
     heading.textContent = data.location;
 
@@ -59,62 +38,78 @@ function createCard(data) {
     const description = document.createElement('p');
     description.textContent = data.description;
 
-    
     card.appendChild(image);
     card.appendChild(heading);
     card.appendChild(price);
     card.appendChild(description);
 
     card.addEventListener('click', function () {
-      // Redirect to CardPage.html with some parameter, for example, location ID
-      window.location.href = `./CardPage.html?location=${data.location}`;
-  });
+        window.location.href = `./CardPage.html?location=${data.location}`;
+    });
 
-     return card;
-  }
+    return card;
+}
 
-let page=1;
-let flag = false;
+let page = 1;
 fetchData(page);
 
 let scrollHeight = document.documentElement.scrollHeight;
 let clientHeight = document.documentElement.clientHeight;
-console.log(scrollHeight,clientHeight)
-window.addEventListener('scroll',(e) => {
-  let scrollTop = document.documentElement.scrollTop;
-  console.log(Math.ceil(scrollTop),scrollHeight-clientHeight);
-  if(Math.ceil(clientHeight+scrollTop)>= scrollHeight) {
-    console.log("at bottom now");
-    page++;
-    fetchData(page);
-    
-  }
-})
+
+window.addEventListener('scroll', (e) => {
+    let scrollTop = document.documentElement.scrollTop;
+    if (Math.ceil(clientHeight + scrollTop) >= scrollHeight) {
+        page++;
+        fetchData(page);
+    }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
-  
-  const signupButton = document.getElementById('signupButton');
-  const loginButton = document.getElementById('loginButton');
+    const signupButton = document.getElementById('signupButton');
+    const loginButton = document.getElementById('loginButton');
 
-  
-  signupButton.addEventListener('click', function () {
-      
-      window.location.href = "./register.html";
-  });
+    signupButton.addEventListener('click', function () {
+        window.location.href = "./register.html";
+    });
 
-  loginButton.addEventListener('click', function () {
-      
-      window.location.href = "./login.html";
-  });
+    loginButton.addEventListener('click', function () {
+        window.location.href = "./login.html";
+    });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
-  
     let logo = document.querySelector(".Alogo");
-  
     if (logo) {
-      logo.addEventListener("click", function () {
-       
-        window.location.href = "index.html";
-      });
+        logo.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
     }
-  });
+
+   
+});
+
+const searchButton = document.getElementById('sBtn');
+searchButton.addEventListener('click', handleOnSubmit);
+
+function handleOnSubmit(event) {
+    event.preventDefault();
+    let text = form.search.value;
+    let query = text.toLowerCase();
+    window.location.href = `./search.html?query=${query}`;
+}
+
+const sortByPriceDropdown = document.getElementById('sortByPrice');
+
+// Event listener for sorting by price
+sortByPriceDropdown.addEventListener('change', () => {
+    const selectedOption = sortByPriceDropdown.value;
+    let sortParam = '';
+
+    if (selectedOption === 'lowToHigh') {
+        sortParam = '_sort=price&_order=asc';
+    } else if (selectedOption === 'highToLow') {
+        sortParam = '_sort=price&_order=desc';
+    }
+
+    fetchData(page, '', sortParam);
+});
