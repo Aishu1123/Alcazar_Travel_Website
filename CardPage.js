@@ -1,3 +1,4 @@
+
 const bookNowButton = document.getElementById('book-now');
 
 
@@ -43,3 +44,53 @@ SubmitBookingFormBtn.addEventListener("click", (e) => {
 
 // const form = document.getElementById("FormInsideCanvas");
 
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const locationId = urlParams.get('id');
+
+
+    if(locationId){
+        fetchLocationDetails(locationId);
+    }  
+    else
+    {
+        console.error('Location ID not found in URL parameters.');
+    }
+});
+
+
+
+function fetchLocationDetails(locationId){
+
+    const locationDetailsUrl = `https://mock-final-copy-api.onrender.com/locations/${locationId}`;
+
+    fetch(locationDetailsUrl)
+    .then(response =>{
+        if(!response.ok){
+            throw new Error('HTTP error! Status: ${response.status}');
+        }
+        return response.json();
+    })
+    .then(data =>{
+        console.log(data);
+        document.getElementById('location').textContent = data.location;
+        document.getElementById('cost-hotel').textContent = `Price: $${data.price}`;
+        document.getElementById('location-details').textContent = data.description;
+
+    })
+    .catch(error => {
+        console.error('Error fetching location details:', error);
+    });
+
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+   
+    const logoButton = document.getElementById('Alogo');
+
+   logoButton.addEventListener('click', function () {
+        window.location.href = "./index.html";
+    });
+
+});
