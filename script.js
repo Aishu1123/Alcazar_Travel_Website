@@ -1,7 +1,5 @@
 
-
 const locationurl = 'https://mock-api-templated-copy.onrender.com/locations';
-
 
 
 
@@ -28,9 +26,12 @@ let mainSection = document.getElementById("data-list-wrapper");
 
 function appendData(data){
 
-    data.forEach(item => mainSection.append(createCard(item)));
+    data.forEach(item => 
+        mainSection.append(createCard(item)));
+    }
 
-  }
+   
+
 
   function createCard(item){
 
@@ -61,9 +62,12 @@ function appendData(data){
         card.appendChild(image);
         card.appendChild(flexCard);
         card.appendChild(description);
+
+        card.addEventListener('click',() =>{
+            window.location.href = `CardPage.html?id=${item.id}`;
+        })
         return card;
   }
-
 getData();
 
 
@@ -143,3 +147,4 @@ function pagination(total, limit){
         })
     }
 }
+
