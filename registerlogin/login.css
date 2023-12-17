@@ -14,8 +14,7 @@ body .regform {
   background: transparent;
   width: 450px;
   height: 400px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 30px;
   color: white;
 }
@@ -43,9 +42,6 @@ body .regform .input-box input {
   border: 2px solid rgba(10, 9, 9, 0.2);
   padding: 10px;
   padding-right: 30px;
-  color: white;
-}
-body .regform .input-box input::-moz-placeholder {
   color: white;
 }
 body .regform .input-box input::placeholder {
@@ -124,8 +120,7 @@ body .regform button#log:hover a {
     width: 70%;
     max-width: 350px;
     height: auto;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     color: white;
   }
@@ -155,10 +150,6 @@ body .regform button#log:hover a {
     padding-right: 30px;
     color: white;
     font-size: 14px;
-  }
-  .regform .input-box input::-moz-placeholder {
-    color: white;
-    opacity: 0.7;
   }
   .regform .input-box input::placeholder {
     color: white;
@@ -224,4 +215,6 @@ body .regform button#log:hover a {
   nav {
     text-align: center;
   }
-}/*# sourceMappingURL=login.css.map */
+}
+
+/*# sourceMappingURL=login.css.map */
