@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap");
-body {
-  background: url(img.jpg);
-  background-size: cover;
-  font-family: "Poppins", sans-serif;
-}
 body .regform {
-  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +8,8 @@ body .regform {
   background: transparent;
   width: 450px;
   height: 400px;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 30px;
   color: white;
 }
@@ -42,6 +37,9 @@ body .regform .input-box input {
   border: 2px solid rgba(10, 9, 9, 0.2);
   padding: 10px;
   padding-right: 30px;
+  color: white;
+}
+body .regform .input-box input::-moz-placeholder {
   color: white;
 }
 body .regform .input-box input::placeholder {
@@ -78,7 +76,7 @@ body .regform .log {
   justify-content: center;
   margin-top: 20px;
 }
-body .regform button#log {
+body .regform button#log, body .regform #log1 {
   text-decoration: none;
   border: none;
   outline: none;
@@ -90,7 +88,7 @@ body .regform button#log {
   transition: background-color 0.3s ease;
   width: 100%;
 }
-body .regform button#log a {
+body .regform button#log a, body .regform #log1 a {
   text-decoration: none;
   color: black;
   display: block;
@@ -98,14 +96,15 @@ body .regform button#log a {
   height: 100%;
 }
 body .regform button#log:hover,
-body .regform button#log:hover a {
+body .regform button#log:hover a,
+body .regform #log1:hover,
+body .regform #log1:hover a {
   background-color: rgb(51, 10, 106);
   color: white;
 }
 
 @media screen and (min-width: 375px) and (max-width: 667px) {
   body {
-    background: url(img.jpg);
     background-size: contain;
     font-family: "Poppins", sans-serif;
   }
@@ -120,7 +119,8 @@ body .regform button#log:hover a {
     width: 70%;
     max-width: 350px;
     height: auto;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     border-radius: 20px;
     color: white;
   }
@@ -150,6 +150,10 @@ body .regform button#log:hover a {
     padding-right: 30px;
     color: white;
     font-size: 14px;
+  }
+  .regform .input-box input::-moz-placeholder {
+    color: white;
+    opacity: 0.7;
   }
   .regform .input-box input::placeholder {
     color: white;
@@ -215,6 +219,4 @@ body .regform button#log:hover a {
   nav {
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

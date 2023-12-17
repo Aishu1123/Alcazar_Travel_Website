@@ -1,14 +1,11 @@
 
-
-const locationurl = 'https://mock-api-templated-copy.onrender.com/locations';
-
+const locationurl = 'https://mock-final-copy-api.onrender.com/locations';
 
 
 
 async function getData(url = `${locationurl}?_page=${page || 1}&_limit=6`) {
 
     try {
-        
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -26,43 +23,53 @@ async function getData(url = `${locationurl}?_page=${page || 1}&_limit=6`) {
 let mainSection = document.getElementById("data-list-wrapper");  
 
 
-function appendData(data){
-
+function appendData(data) {
     data.forEach(item => mainSection.append(createCard(item)));
+}
 
-  }
+function createCard(data) {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-  function createCard(item){
+    const image = document.createElement('img');
+    image.src = data.image;
+    image.alt = data.location;
+    card.appendChild(image);
 
-       let card = document.createElement("div");
-       card.classList.add('card-list');
-
-       let image = document.createElement('img');
-       image.className = 'card-image';
-       image.src = item.image;
-       image.alt = item.location;
+    const info = document.createElement('div');
+    info.className = 'info'; 
+    
+    const heading = document.createElement('h2');
+    heading.textContent = data.location;
   
-         let heading = document.createElement('h3');
-         heading.className = "heading";
-         heading.textContent = item.location;
+    const price = document.createElement('p');
+    price.textContent = `Price: $${data.price}`;
+  
+    const description = document.createElement('p');
+    description.textContent = data.description;
+  
+    info.appendChild(heading);
+    info.appendChild(price);
+    info.appendChild(description);
 
-        let price = document.createElement('p');
-        price.textContent = "Price: $"+ item.price;
-        heading.className = "price";
+    let read = document.createElement('a');
+    read.className = 'btnn';
+    read.href = '#';
+    read.innerText = 'Read more';
+  
+    info.appendChild(read);
+    card.appendChild(info);
+   
+   
+    card.addEventListener('click', function () {
+        window.location.href = `CardPage.html?id=${data.id}`;
+    });
+    read.addEventListener('click', function () {
+        window.location.href = `./CardPage.html?id=${data.id}`;
+    });
+    return card;
+}
 
-        let description = document.createElement('p');
-        description.className = 'desc';
-        description.textContent = item.description;
-           
-        let flexCard = document.createElement('div');
-        flexCard.append(heading);
-        flexCard.append(price);
-
-        card.appendChild(image);
-        card.appendChild(flexCard);
-        card.appendChild(description);
-        return card;
-  }
 
 getData();
 
@@ -82,43 +89,49 @@ function Trendingbutton(){
     let Trendingfilter = document.getElementById('trending');
 
     Trendingfilter.addEventListener('click', () =>{
-        getData(`${locationurl}?_page=${page || 1}&_limit=6`)
+
+       let url =  `${locationurl}?_page=${page}&_limit=6&price_lte=2000`;
+
+        getData(url);
+
     })
 }
 
+function Popularbutton() {
 
-function Popularbutton(){
-     
+
     let Popularfilter = document.getElementById('popular');
-
+    
     Popularfilter.addEventListener('click', () =>{
-        getData(`${locationurl}?_page=${page || 1}&_limit=6`)
-    })
+       
+    let url = `${locationurl}?_page=${page}&_limit=6&price_lte=3000`;
+
+    getData(url);
+    
+});
 }
 
-function Featuresbutton(){
-     
-    let Featurefilter = document.getElementById('features');
 
-    Featurefilter.addEventListener('click', () =>{
-        getData(`${locationurl}?_page=${page || 1}&_limit=6`)
-    })
-}
 
 function Recommendbutton(){
     let Recommendfilter = document.getElementById('recommend');
 
     Recommendfilter.addEventListener('click', () =>{
-        getData(`${locationurl}?_page=${page || 1}&_limit=6`)
-    })
+        let url = `${locationurl}?_page=${page}&_limit=6&price_gte=3000&price_lt=5000`;
+
+        getData(url);
+    });
 }
 
-function Tourpackagebutton(){
+function Premiumbutton(){
      
-    let Tourfilter = document.getElementById('tour');
+    let Tourfilter = document.getElementById('premium');
 
     Tourfilter.addEventListener('click', () =>{
-        getData(`${locationurl}?_page=${page || 1}&_limit=6`)
+        let url = `${locationurl}?_page=${page}&_limit=6&price_lte=5000`;
+
+        getData(url);
+      
     })
 }
 
@@ -131,11 +144,11 @@ function pagination(total, limit){
 
     paginationWrapper.innerHTML = "";
 
-    for(let i = 1; i < totalPage; i++){
+    for(let i = 1; i <= totalPage; i++){
  
         let button = document.createElement('button');
         
-        button.className = "pagination-button";
+        button.className = "pagination-button button-default";
         button.textContent = i;
         paginationWrapper.append(button);
         button.addEventListener('click', ()=>{
@@ -143,3 +156,5 @@ function pagination(total, limit){
         })
     }
 }
+
+

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap');
 body {
+    
     background: url(img.jpg);
+    filter: brightness();
+    background-repeat: no-repeat;
+    background: transparent;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 
@@ -17,12 +21,12 @@ body {
     height: 550px;
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    color: white;
+    // color: white;
 
     h1 {
         font-size: 25px;
         text-align: center;
-        color: white;
+        // color: white;
     }
 
     .input-box {
@@ -35,7 +39,7 @@ body {
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
-        color: white;
+        // color: white;
     }
 
     .input-box input {
@@ -46,12 +50,9 @@ body {
         border: 2px solid rgba(10, 9, 9, 0.2);
         padding: 15px;
         padding-right: 30px;
-        color: white;
     }
 
-    .input-box input::placeholder {
-        color: white;
-    }
+
 
     .regbut {
         width: 45%; 
@@ -83,7 +84,7 @@ body {
         margin-top: 20px;
     }
 
-    button#log {
+    button#log , button#log1{
         text-decoration: none; 
         border: none;
         outline: none;
@@ -96,7 +97,7 @@ body {
         width: 100%;
     }
 
-    button#log a {
+    button#log a ,button#log1 a{
         text-decoration: none; 
         color: black; 
         display: block; 
