@@ -1,8 +1,6 @@
 
 
-
-
-const url = 'https://mock-api-templated-copy.onrender.com/locations';
+const url = 'https://mock-final-copy-api.onrender.com/locations';
 let searchArea = document.getElementById("Search_area");
 let form = document.getElementById("form");
 
@@ -44,7 +42,7 @@ function createCard(data) {
     card.appendChild(description);
 
     card.addEventListener('click', function () {
-        window.location.href = `./CardPage.html?location=${data.location}`;
+        window.location.href = `CardPage.html?id=${data.id}`;
     });
 
     return card;
@@ -89,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const searchButton = document.getElementById('sBtn');
+
 searchButton.addEventListener('click', handleOnSubmit);
 
 function handleOnSubmit(event) {
