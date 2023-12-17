@@ -32,15 +32,15 @@
          <div class = "flex-Done"> 
             <div class = "flex-box-info">
                 <div id = "location-price">
-                    <h4 id = "location" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;">
+                    <h4 id = "location" style = "font-family: Arial, Helvetica, sans-serif; font-size: 30px; margin-left: 30px;">
                        
                     </h4>
-                   <p id = "cost-hotel" style = "font-family: Arial, Helvetica, sans-serif; font-size: 40px; margin-left: 40px;  margin-top: 50px; ">
+                   <p id = "cost-hotel" style =  " text-align: center; border-radius: 8px; background-color: rgb(210, 205, 205); font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 70px; margin-right: -50px;  margin-top: 40px; ">
                      
                    </p>
                 </div>
     
-               <div id = "location-details" style = "font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin: 20px; margin-left: 40px;">
+               <div id = "location-details" style = "font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 20px; margin-left: 40px;">
                     
                </div>
                <div class = "information">
@@ -69,10 +69,6 @@
                         <td>Return Time</td>
                         <td>Appr. 7.30PM</td>
                     </tr>
-                    <tr>
-                        <td>Dress Code</td>
-                        <td>Casual, Comfortable and Light</td>
-                    </tr>
                 </table>
             
                 <table style=" margin: 40px; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px;">
@@ -82,7 +78,7 @@
                     <tr>
                         <td>
                             <ul  style = "margin: 25px;"class="included-list">
-                                <li>5Star Hotels</li>
+                                <li>5Star Accommodation</li>
                                 <li>Airport Transfer</li>
                                 <li>Breakfast</li>
                                 <li>Personal Guide</li>
@@ -112,25 +108,54 @@
                 </div>
             </div>
         </div>
-
         <script>
-                const bookNowButton = document.getElementById('book-now');
+            document.addEventListener('DOMContentLoaded', () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const locationId = urlParams.get('id');
 
-                bookNowButton.addEventListener('click', () =>{
-                    window.location.href = 'mybooking.html';
+
+                if(locationId){
+                    fetchLocationDetails(locationId);
+                }
+                else{
+                    console.error('Location ID not found in URL parameters');
+                }
+            });
+
+
+
+            function fetchLocationDetails(locationId){
+                const locationDetailsUrl = `https://mock-api-templated-copy.onrender.com/locations/${locationId}`;
+
+                fetch(locationDetailsUrl)
+                .then(response => {
+                    if(!response.ok){
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
                 })
-                 const LocationName = document.getElementById('location')
-                 LocationName.textContent = locations.location;
+                .then(data =>{
+                    document.getElementById('location').textContent = data.location;
+                    document.getElementById('cost-hotel').textContent = `Price: $${data.price}/PER PERSON`;
+                    document.getElementById('location-details').textContent = data.description;
 
-                 const LocationPrice = document.getElementById('cost-hotel')
-                 LocationPrice.textContent = locations.price;
-
-                 const LocationDesc = document.getElementById('location-details')
-                 LocationDesc.textContent = locations.description;
+                })
+                .catch(error => {
+                    console.error('Error fetching location details:', error);
+                });
+            }
 
         </script>
+       
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
