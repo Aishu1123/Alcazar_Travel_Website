@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://www.medtravelers.com/siteassets/podcasts/i-need-travel-therapy-website-bg-1200x525.jpg?format=webp'); 
+    background-image: url('https://st4.depositphotos.com/18071024/20132/i/450/depositphotos_201322754-stock-photo-set-metal-hexagons-dark-plane.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -10,30 +10,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   }
   
   
   .payment-container {
     display: flex;
     justify-content: center;
+    width: 700px;
   }
   
   .payment-content {
     display: flex;
     align-items: center;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.8); 
+    max-width: 1200px;
+    background-color: rgba(8, 87, 83, 0.8); 
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 25px;
+    width: 1200px;
   }
   
   .payment-image {
-    width: 300px; 
+    width: 350px; 
     margin-right: 20px;
   }
   
   .payment-form {
-    max-width: 250px;
+    max-width: 350px;
     margin: auto;
   }
   
