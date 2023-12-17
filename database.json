@@ -27,13 +27,16 @@
 {
 "id": "4",
 "image": "https://www.moroccotoptrips.com/wp-content/uploads/2022/06/merzouga-desert-camp-1024x629.png",
+"location" : "Marratekh Morocco",
 "price": "6699",
 "description": "If you are going to Morocco, visiting the Sahara Desert should be at the top of your bucket list. The tranquillity and infinite beauty of the rose gold Morocco sand dunes is like nothing else on earth."
 },
 {
 "id": "5",
 "image": "https://assets.palmspringslife.com/wp-content/uploads/2017/03/13103531/san-jacinto.png",
+"location" : "Peak palm springs",
 "price": "5522",
+
 "description": " Tucked away in the desert inland from Los Angeles and San Diego, Palm Springs offers a relaxing desert getaway with a rich history."
 },
 {
