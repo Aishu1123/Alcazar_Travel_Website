@@ -1,46 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+    <title>Register</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-
- 
-    <div>
-        <nav>
-            <a href="../index.html"><img src="alcalogo.png" alt=""></a>
-        </nav>
-    </div>
-
-    <div class="regform">
-        <form>
-            <h1>Login To Continue</h1>
-
-            <div class="input-box">
-                <input type="text" id="username" placeholder="Username" required>
-                <i class='bx bxs-user'></i>
-            </div>
-
-            <div class="input-box">
-                <input type="password" id="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
+    
+    <!-- register -->
+    <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front" id="RegisterDiv">
+            <div class="regform">
+                <form>
+                <h1 style="color:black">Welcome To Alcazar</h1>
             
-            <div class="log">
-                <button id="log" type="submit"><strong> LOGIN </strong></button>
+                <div class="input-box">
+                <input type="text" id="regusername" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
             </div>
-
+        
+            <div class="input-box">
+                <input type="email" id="regmail" placeholder="email" required>
+                <i class="bx bxs-envelope" ></i>
+            </div>
+    
+            <div class="input-box">
+                <input type="tel" id="regcontact" placeholder="Mobile" required>
+                <i class="bx bx-mobile"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" id="regpassword"  placeholder="Create Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+    
+            <div class="soclog"><img src="facebook-circle-logo-36.png" alt="">
+                <img src="google-plus-circle-logo-36.png" alt="">
+                <img src="apple-logo-36.png" alt="">
+            </div>
+    
+            </form>
             <div class="regbut">
-                <a href="register.html">REGISTER</a>
+                <button id="reg" type="submit"><strong>REGISTER</strong></button>
             </div>
-        </form>
-    </div>
+            <div class="log">
+                <button id="log"> <a id="flipper"><strong>LOGIN</strong></a>  
+                 </button>
+             </div>
+            
+            </div>
+          </div>
+          <div class="card__face card__face--back" id="loginDiv">
+            <div class="regform">
+                <form>
+                    <h1 style="color:black">Login To Continue</h1>
+        
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    
+                    <div class="soclog"><img src="facebook-circle-logo-36.png" alt="">
+                        <img src="google-plus-circle-logo-36.png" alt="">
+                        <img src="apple-logo-36.png" alt="">
+                    </div>
+                    <div class="log">
+                        <button id="log1" type="submit"><strong> LOGIN </strong></button>
+                    </div>
+        
+                </form>
+                <div class="regbut" >
+                    <a id="flipper2">REGISTER</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="login.js"></script>
+     
+    <script>
+        var card = document.querySelector('.card');
+        let btn = document.getElementById("flipper");
+        btn.addEventListener( 'click', function() {
+            card.classList.toggle('is-flipped');
+        });
+        
+        let btn2 = document.getElementById("flipper2");
+        btn2.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+        });
+    </script>
+    <script src="./register.js"></script>
+    <script src="./login.js"></script>
+    
+
 </body>
 </html>

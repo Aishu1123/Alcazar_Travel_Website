@@ -4,14 +4,14 @@
 ////////
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap');
 body {
-    background: url(img.jpg);
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
+    // background: url(img.jpg);
+    // background-size: cover;
+    // font-family: 'Poppins', sans-serif;
     
 
 
 .regform {
-    margin: 20px auto;
+    // margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +95,7 @@ body {
         margin-top: 20px;
     }
 
-    button#log {
+    button#log , #log1 {
         text-decoration: none;
         border: none;
         outline: none;
@@ -108,7 +108,7 @@ body {
         width: 100%;
     }
 
-    button#log a {
+    button#log a ,#log1 a{
         text-decoration: none;
         color: black;
         display: block;
@@ -117,7 +117,9 @@ body {
     }
 
     button#log:hover,
-    button#log:hover a {
+    button#log:hover a ,
+    #log1:hover,
+    #log1:hover a{
         background-color: rgb(51, 10, 106);
         color: white;
     }
@@ -153,7 +155,7 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 667px) {
     body {
-        background: url(img.jpg);
+        // background: url(img.jpg);
         background-size: contain;
         font-family: 'Poppins', sans-serif;
     }

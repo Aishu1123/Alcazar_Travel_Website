@@ -27,7 +27,7 @@ function createCard(data) {
     card.appendChild(image);
 
     const info = document.createElement('div');
-    info.className = 'info'; // Change this to 'info'
+    info.className = 'info'; 
     
     const heading = document.createElement('h2');
     heading.textContent = data.location;

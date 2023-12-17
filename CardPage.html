@@ -194,6 +194,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const urlParams = new URLSearchParams(window.location.search);
+                console.log(urlParams);
                 const locationId = urlParams.get('id');
 
 
@@ -204,7 +205,7 @@
                     console.error('Location ID not found in URL parameters');
                 }
             });
-
+            var particularData;
 
 
             function fetchLocationDetails(locationId){
@@ -218,6 +219,8 @@
                     return response.json();
                 })
                 .then(data =>{
+                    console.log(data);
+                    particularData = data;
                     document.getElementById('location').textContent = data.location;
                     document.getElementById('cost-hotel').textContent = `Price: $${data.price}/PER PERSON`;
                     document.getElementById('location-details').textContent = data.description;
@@ -227,7 +230,7 @@
                     console.error('Error fetching location details:', error);
                 });
             }
-
+            console.log(data);
         </script>
        
 

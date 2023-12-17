@@ -1,6 +1,6 @@
 
 
-let loginButton = document.getElementById("log");
+let loginButton = document.getElementById("log1");
 loginButton.addEventListener('click', loginUser)
 
 
