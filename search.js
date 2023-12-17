@@ -1,8 +1,4 @@
-
-
-
-
-const url = 'https://mock-api-templated-copy.onrender.com/locations';
+const url = 'https://mock-final-copy-api.onrender.com/locations';
 let searchArea = document.getElementById("Search_area");
 let form = document.getElementById("form");
 
@@ -28,22 +24,37 @@ function createCard(data) {
     const image = document.createElement('img');
     image.src = data.image;
     image.alt = data.location;
+    card.appendChild(image);
 
-    const heading = document.createElement('h3');
+    const info = document.createElement('div');
+    info.className = 'info'; // Change this to 'info'
+    
+    const heading = document.createElement('h2');
     heading.textContent = data.location;
-
+  
     const price = document.createElement('p');
     price.textContent = `Price: $${data.price}`;
-
+  
     const description = document.createElement('p');
     description.textContent = data.description;
+  
+    info.appendChild(heading);
+    info.appendChild(price);
+    info.appendChild(description);
 
-    card.appendChild(image);
-    card.appendChild(heading);
-    card.appendChild(price);
-    card.appendChild(description);
-
+    let read = document.createElement('a');
+    read.className = 'btnn';
+    read.href = '#';
+    read.innerText = 'Read more';
+  
+    info.appendChild(read);
+    card.appendChild(info);
+   
+   
     card.addEventListener('click', function () {
+        window.location.href = `./CardPage.html?location=${data.location}`;
+    });
+    read.addEventListener('click', function () {
         window.location.href = `./CardPage.html?location=${data.location}`;
     });
 
@@ -67,13 +78,17 @@ window.addEventListener('scroll', (e) => {
 document.addEventListener('DOMContentLoaded', function () {
     const signupButton = document.getElementById('signupButton');
     const loginButton = document.getElementById('loginButton');
+    const Tours = document.getElementById('tour');
 
     signupButton.addEventListener('click', function () {
-        window.location.href = "./register.html";
+        window.location.href = "./registerlogin/register.html";
     });
 
     loginButton.addEventListener('click', function () {
-        window.location.href = "./login.html";
+        window.location.href = "./registerlogin/login.html";
+    });
+    Tours.addEventListener('click', function () {
+        window.location.href = "./search.html";
     });
 });
 

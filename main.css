@@ -742,19 +742,21 @@ body {
 
 .Annavbar-div {
   width: 100%;
-  height: 1000px;
+  /* height: 1000px;  */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Aboxx-wrapper {
   width: 100%;
-  height: 50px;
-  padding-top: 30px;
-  background-color: rgb(169, 169, 245);
+  height: 110px;
+  /* padding-top: 30px; */
+  background: rgb(83, 95, 220);
+  background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
   font-weight: 400;
 }
 .Aboxx-wrapper .Alogo {
@@ -768,9 +770,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 40px;
   position: absolute;
-  left: 500px;
+  left: 800px;
   font-size: 18px;
 }
 .Aboxx-wrapper .Alinks .Anav-link {
@@ -788,7 +790,7 @@ body {
   gap: 10px;
 }
 
-#Search_area {
+/* #Search_area {
   margin: auto;
   width: 80%;
   display: grid;
@@ -811,7 +813,7 @@ body {
   justify-content: space-between;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  background: linear-gradient(90deg, rgba(93, 106, 206, 0.6) 2%, rgba(100, 207, 229, 0.6) 60%, rgba(51, 135, 152, 0.6) 90%);
+   background: linear-gradient(90deg, rgba(93, 106, 206, 0.6) 2%, rgba(100, 207, 229, 0.6) 60%, rgba(51, 135, 152, 0.6) 90%);
 }
 
 .card:hover {
@@ -836,13 +838,111 @@ body {
   color: #666;
   font-size: 1.1em;
   line-height: 1.4;
-  max-height: 80px;
+  max-height: 80px; 
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
 
 .card:hover p {
-  max-height: 1000px;
+  max-height: 1000px; 
+} */
+#Search_area {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 260px;
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(13, 36, 63, 0.3), rgb(13, 36, 63));
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .info {
+  position: relative;
+  color: #fff;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .info h2 {
+  padding-top: 20px;
+  line-height: 40px;
+  /* margin-bottom: 10px; */
+}
+
+.card .info p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  /* margin-bottom: 20px; */
+}
+
+.card .info .btnn {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.card .info .btnn:hover {
+  background: rgb(83, 95, 220);
+  background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
+  color: #fff;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ssf */
@@ -877,7 +977,8 @@ body {
 }
 
 #sBtn {
-  background-color: rgb(189, 189, 246);
+  background: rgb(83, 95, 220);
+  background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -888,7 +989,8 @@ body {
 /* Shashank */
 footer {
   margin-top: 0%;
-  background-color: #1BA0E2;
+  background: rgb(83, 95, 220);
+  background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   padding: 40px;
   color: rgba(221, 218, 218, 0.979);
   font-family: Arial, Helvetica, sans-serif;
