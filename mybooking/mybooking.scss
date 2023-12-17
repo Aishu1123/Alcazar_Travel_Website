@@ -1,0 +1,186 @@
+body {
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('solidbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+
+
+}
+
+
+nav  a:hover{
+  
+color: rgb(225, 219, 219);
+   
+}
+
+
+.tit {
+    text-align: center;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.rev {
+    text-align: center;
+    // margin: 10px 0 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(8, 8, 8);
+}
+
+
+
+button {
+    background-color: rgb(31, 147, 193);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(10, 103, 140);
+}
+
+.move button {
+    border-radius: 10px;
+}
+
+td {
+    margin: 10px;
+    color: rgb(95, 92, 92);
+}
+
+
+
+#cost{
+font-size: 25px;
+}
+th {
+    text-align: center;
+    padding-left: 10px;
+}
+
+nav {
+    font-weight: bolder;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(13, 156, 212);
+    height: 45px;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+.mybook {
+
+    padding: 50px 0;
+    // margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+
+
+    .leftdet {
+        width: 600px;
+        height: 470px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px solid rgb(231, 218, 218);
+        text-align: center;
+        padding: 20px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th {
+            text-align: left;
+            padding: 5px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .move {
+            text-align: right;
+            margin-top: 0px;
+        }
+
+        h3 {
+            font-weight: bolder;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    .caro {
+        width: 600px;
+        height: 470px;
+        border: 1px solid rgb(212, 196, 196);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+
+    }
+
+    .carousel-item {
+        overflow: hidden;
+        border-radius: 19px;
+    }
+}
+
+
+@media all and (min-width:375px) and (max-width:680px) {
+    .mybook {
+        flex-direction: column;
+        padding: 10px;
+
+        .leftdet {
+            width: 280px;
+            height: auto;
+
+
+        }
+
+        .caro {
+            width: 280px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+    }
+}
