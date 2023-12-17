@@ -18,16 +18,16 @@ body {
 }
 
 .back-video{
-  position: absolute;
+   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
   filter: brightness(0.8);
 }
 
-.Abox-wrapper {
+.Abox-wrapperr {
  width: 100%;
-  height: 110px;
+  height: 100px;
  box-shadow: 0 0 10px #000;
   background: #00000083;
  display: flex;
@@ -39,8 +39,8 @@ body {
   .Alogoo {
     width: 150px;
     height: 40px;
-    position: absolute;
-    margin-left: 100px;
+   position: absolute;
+    margin-left:-1000px;
     cursor: pointer;
   }
 
@@ -64,6 +64,7 @@ body {
       &:hover {
         transform: scale(1.2); 
         text-decoration: underline;
+        color: rgb(165, 165, 237);
       }
     }
   }
@@ -90,6 +91,7 @@ body {
 .Anav_buttonn:hover {
     text-decoration: underline;
     transform: scale(1.2); 
+    color: rgb(165, 165, 237);
 }
 
  
@@ -162,10 +164,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
-color: white;
+
 width: 50px; 
 height: 50px; 
-background: rgb(83,95,220);
+
 background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
  
 border-radius: 50%;

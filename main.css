@@ -24,9 +24,9 @@ body {
   filter: brightness(0.8);
 }
 
-.Abox-wrapper {
+.Abox-wrapperr {
   width: 100%;
-  height: 110px;
+  height: 100px;
   box-shadow: 0 0 10px #000;
   background: rgba(0, 0, 0, 0.5137254902);
   display: flex;
@@ -34,14 +34,14 @@ body {
   justify-content: center;
   font-weight: 400;
 }
-.Abox-wrapper .Alogoo {
+.Abox-wrapperr .Alogoo {
   width: 150px;
   height: 40px;
   position: absolute;
-  margin-left: 100px;
+  margin-left: -1000px;
   cursor: pointer;
 }
-.Abox-wrapper .Alinkss {
+.Abox-wrapperr .Alinkss {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,21 +50,22 @@ body {
   left: 540px;
   font-size: 15px;
 }
-.Abox-wrapper .Alinkss .Anav-link {
+.Abox-wrapperr .Alinkss .Anav-link {
   text-decoration: none;
   color: white;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
-.Abox-wrapper .Alinkss .Anav-link:hover {
+.Abox-wrapperr .Alinkss .Anav-link:hover {
   transform: scale(1.2);
   text-decoration: underline;
+  color: rgb(165, 165, 237);
 }
-.Abox-wrapper .button-container {
+.Abox-wrapperr .button-container {
   display: flex;
   gap: 10px;
 }
-.Abox-wrapper .Anav_buttonn {
+.Abox-wrapperr .Anav_buttonn {
   background: none;
   border: none;
   cursor: pointer;
@@ -74,9 +75,10 @@ body {
   font-weight: bold;
   transition: transform 0.3s ease;
 }
-.Abox-wrapper .Anav_buttonn:hover {
+.Abox-wrapperr .Anav_buttonn:hover {
   text-decoration: underline;
   transform: scale(1.2);
+  color: rgb(165, 165, 237);
 }
 
 .Ahead-section {
@@ -147,10 +149,8 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: white;
   width: 50px;
   height: 50px;
-  background: rgb(83, 95, 220);
   background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   border-radius: 50%;
   font-size: 16px;
@@ -777,7 +777,6 @@ body {
   width: 100%;
   height: 110px;
   box-shadow: 0 0 10px #000;
-  background: rgb(83, 95, 220);
   background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   display: flex;
   align-items: center;
