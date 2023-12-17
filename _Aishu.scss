@@ -8,41 +8,51 @@ body {
 
 .Anavbar-div {
   width: 100%;
-  height: 1000px; 
+  height:100vh; 
   /* height: 722px; */
-  background-image: url('Image/background image.jpg');
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  /* background-image: url('Image/background image.jpg'); */
+  /* background-repeat: no-repeat; 
+  background-size: cover;  */
+  position: relative;
+  justify-content: center;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(0.8);
 }
 
 .Abox-wrapper {
  width: 100%;
-  height: 50px;
-  padding-top: 30px;
-  
-  display: flex;
+  height: 110px;
+ box-shadow: 0 0 10px #000;
+  background: #00000083;
+ display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   font-weight: 400;
  
 
-  .Alogo {
-    width: 180px;
-    height: 150px;
+  .Alogoo {
+    width: 150px;
+    height: 40px;
     position: absolute;
-    margin-left: 80px;
+    margin-left: 100px;
     cursor: pointer;
   }
 
   
-  .Alinks {
+  .Alinkss {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
     position: absolute;
-    left: 340px;
-    font-size: 18px;
+    left: 540px;
+    font-size: 15px;
    
   
     .Anav-link {
@@ -64,19 +74,20 @@ body {
     gap: 10px; 
 }
 
-.Anav_button {
+.Anav_buttonn {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
+   
     color:white;
-    font-weight: bold;
+     font-weight: bold;
     transition: transform 0.3s ease; 
    
 }
 
-.Anav_button:hover {
+.Anav_buttonn:hover {
     text-decoration: underline;
     transform: scale(1.2); 
 }
@@ -91,7 +102,7 @@ body {
 
   .AheadingAA h1 {
     margin-bottom: 10px;
-    font-size: 4em;
+    font-size: 5em;
     color: white;
     
   }
@@ -114,11 +125,14 @@ body {
   height: 6vh;
   border-radius: 50px;
   padding: 10px 8px 10px 30px;
-  border: 14px solid rgba(128, 128, 128, 0.395);
+  // border: 14px solid rgb(74, 71, 71);
+  border: 14px solid whitesmoke;
   display: flex;
   flex-direction: row; 
   gap: 20px; 
   align-items: center; 
+  box-shadow: 0 0 10px #000;
+  background: rgba(255, 255, 255, 0.51);
 }
 
 .Acontainer .Asearch-bar form {
@@ -136,6 +150,12 @@ body {
   background: transparent;
   cursor: pointer;
 }
+#search::placeholder,
+#Acheckin::placeholder,
+#Aguest::placeholder {
+    color: black;
+    font-weight: bold;
+}
 
 #As-btn {
 display: flex;
@@ -143,9 +163,11 @@ align-items: center;
 justify-content: center;
 cursor: pointer;
 color: white;
-width: 40px; 
-height: 40px; 
-background-color: #1ca0e3;
+width: 50px; 
+height: 50px; 
+background: rgb(83,95,220);
+background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
+ 
 border-radius: 50%;
 font-size: 16px; 
 border: none; 

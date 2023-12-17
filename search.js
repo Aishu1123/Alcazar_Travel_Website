@@ -78,7 +78,7 @@ window.addEventListener('scroll', (e) => {
 document.addEventListener('DOMContentLoaded', function () {
     const signupButton = document.getElementById('signupButton');
     const loginButton = document.getElementById('loginButton');
-    const Tours = document.getElementById('tour');
+    const Tours = document.getElementById('tourr');
 
     signupButton.addEventListener('click', function () {
         window.location.href = "./registerlogin/register.html";

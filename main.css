@@ -7,45 +7,56 @@ body {
 
 .Anavbar-div {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   /* height: 722px; */
-  background-image: url("Image/background image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('Image/background image.jpg'); */
+  /* background-repeat: no-repeat; 
+  background-size: cover;  */
+  position: relative;
+  justify-content: center;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(0.8);
 }
 
 .Abox-wrapper {
   width: 100%;
-  height: 50px;
-  padding-top: 30px;
+  height: 110px;
+  box-shadow: 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.5137254902);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: 400;
 }
-.Abox-wrapper .Alogo {
-  width: 180px;
-  height: 150px;
+.Abox-wrapper .Alogoo {
+  width: 150px;
+  height: 40px;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 100px;
   cursor: pointer;
 }
-.Abox-wrapper .Alinks {
+.Abox-wrapper .Alinkss {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 70px;
   position: absolute;
-  left: 340px;
-  font-size: 18px;
+  left: 540px;
+  font-size: 15px;
 }
-.Abox-wrapper .Alinks .Anav-link {
+.Abox-wrapper .Alinkss .Anav-link {
   text-decoration: none;
   color: white;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
-.Abox-wrapper .Alinks .Anav-link:hover {
+.Abox-wrapper .Alinkss .Anav-link:hover {
   transform: scale(1.2);
   text-decoration: underline;
 }
@@ -53,17 +64,17 @@ body {
   display: flex;
   gap: 10px;
 }
-.Abox-wrapper .Anav_button {
+.Abox-wrapper .Anav_buttonn {
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
-.Abox-wrapper .Anav_button:hover {
+.Abox-wrapper .Anav_buttonn:hover {
   text-decoration: underline;
   transform: scale(1.2);
 }
@@ -75,7 +86,7 @@ body {
 }
 .Ahead-section .AheadingAA h1 {
   margin-bottom: 10px;
-  font-size: 4em;
+  font-size: 5em;
   color: white;
 }
 .Ahead-section .AheadingAB h4 {
@@ -94,11 +105,13 @@ body {
   height: 6vh;
   border-radius: 50px;
   padding: 10px 8px 10px 30px;
-  border: 14px solid rgba(128, 128, 128, 0.395);
+  border: 14px solid whitesmoke;
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  box-shadow: 0 0 10px #000;
+  background: rgba(255, 255, 255, 0.51);
 }
 
 .Acontainer .Asearch-bar form {
@@ -117,15 +130,28 @@ body {
   cursor: pointer;
 }
 
+#search::-moz-placeholder, #Acheckin::-moz-placeholder, #Aguest::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+#search::placeholder,
+#Acheckin::placeholder,
+#Aguest::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
 #As-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   color: white;
-  width: 40px;
-  height: 40px;
-  background-color: #1ca0e3;
+  width: 50px;
+  height: 50px;
+  background: rgb(83, 95, 220);
+  background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   border-radius: 50%;
   font-size: 16px;
   border: none;
@@ -750,7 +776,7 @@ body {
 .Aboxx-wrapper {
   width: 100%;
   height: 110px;
-  /* padding-top: 30px; */
+  box-shadow: 0 0 10px #000;
   background: rgb(83, 95, 220);
   background: linear-gradient(90deg, rgb(83, 95, 220) 1%, rgb(99, 127, 224) 8%, rgb(101, 143, 239) 24%, rgb(138, 157, 229) 47%, rgb(90, 112, 219) 64%, rgb(112, 122, 198) 81%, rgb(76, 137, 225) 100%);
   display: flex;
@@ -760,19 +786,19 @@ body {
   font-weight: 400;
 }
 .Aboxx-wrapper .Alogo {
-  width: 180px;
-  height: 150px;
+  width: 150px;
+  height: 40px;
   position: absolute;
-  margin-left: 80px;
+  margin-left: 135px;
   cursor: pointer;
 }
 .Aboxx-wrapper .Alinks {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   position: absolute;
-  left: 800px;
+  left: 730px;
   font-size: 18px;
 }
 .Aboxx-wrapper .Alinks .Anav-link {
@@ -948,7 +974,6 @@ body {
 /* ssf */
 .ssf {
   height: 100px;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   margin: auto;
