@@ -36,6 +36,6 @@ function registerUser(event) {
     localStorage.setItem('users', JSON.stringify(users));
 
     alert('Registration successful!');
-
-    window.location.href = 'login.html';
+    card.classList.toggle('is-flipped');
+    // window.location.href = 'login.html';
 }
