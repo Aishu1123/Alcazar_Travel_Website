@@ -62,20 +62,19 @@ Here are some screenshots of Alcazar website:
 
 Team Members The following team members have carried out the development of this application:
 
-Team Lead: Aishwarya Lohakare Task: Home Page and CSS of search page     GitHub: Aishu1123
+Team Lead: Aishwarya Lohakare(fw28_153) Task: Home Page and CSS of search page      GitHub: Aishu1123
 
-Team Member 1 : Sekhar Task :Implemented API Auth, and card page         GitHub:
+Team Member 1 : Sekhar (fw28_239) Task :Implemented API Auth, and card page         GitHub: rajcodes168h
 
-Team Member 2: Praveen Kumar Task : Static Page ,My Booking Page  and media Query    GitHub:
+Team Member 2: Praveen Kumar (fw28_133) Task : Static Page ,My Booking Page  and media Query    GitHub:praveen4898
 
-Team Member 3: Deepak Purohit Task: Login and Registration Page, CSS     Github:
+Team Member 3: Deepak Purohit (fw28_311) Task: Login and Registration Page, CSS     Github: Deepak Purohit
 
-Team Member 4: Shashank Singh Task: Payment Page ,Footer                 Github:
+Team Member 4: Shashank Singh (fw28_270) Task: Payment Page ,Footer                 Github: shaku2202
 
 WEB Development To contribute to this project, follow these steps:
 
 We have used HTML CSS JavaScript BootStrap LocalStorage Json-Server FireBase
 
 The entire website is fully responsive
-
 
