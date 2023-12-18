@@ -25,38 +25,19 @@ The website is hosted on Netlify
 
 ## Tech Stack
 
-- Frontend: React, Chakra UI
-- Backend: Express.js, MongoDB
+- Frontend:HTML,CSS,JavaScript
+- Backend: Express.js
 - Authentication: JWT
 - Hosting: Vercel
 
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/HelloKaushal750/MERN-AlcazarApp
-
+git clone https://github.com/Aishu1123/digital-odyssey-9812.git
 
 2. Navigate to the project directory:
 
-
-3. Install dependencies for both frontend and backend:
-cd client
-npm install
-cd ../backend
-npm install
-
-
-4. Start the development server:
-cd ../client
-npm start
-
-
-5. Open a new terminal window and start the backend server:
-cd ../backend
-npm run start
-
-
-6. Access the app in your browser at [http://localhost:3000/](http://localhost:3000/).
+3. Access the app in your browser at [http://localhost:3000/](http://localhost:3000/).
 
 ## Screenshots
 
@@ -77,4 +58,4 @@ Here are some screenshots of the Flipkart clone website:
 
 ## Contact
 
-Feel free to contact me at kaushalv079@gmail.com for any questions or inquiries.
+
