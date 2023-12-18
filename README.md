@@ -1,15 +1,15 @@
 
 # Alcazar Website
 
-Alcazar is one of the most used travel agency wbsite for booking or planning any vacation across the world.
+Alcazar is one of the most used travel agency websites for booking or planning any vacation worldwide.
 
 
 ## Deployment
 
-Website is hosted on Vercel
+The website is hosted on Netlify
 
 ```bash
-  https://alcazartravels.vercel.app/
+  https://alcazartravel.netlify.app/
 ```
 
 
