@@ -40,7 +40,7 @@ git clone https://github.com/Aishu1123/digital-odyssey-9812.git
 
 Here are some screenshots of Alcazar website:
 
-![Home Page](gitimg/Screenshot (502))
+![Home Page](gitimg/Screenshot(502).png)
 
 ![Vacation List](Images/vacation.png)
 
