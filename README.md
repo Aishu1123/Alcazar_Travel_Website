@@ -40,22 +40,22 @@ git clone https://github.com/Aishu1123/digital-odyssey-9812.git
 
 Here are some screenshots of Alcazar website:
 
-![Home Page](/git/1.png)
+![Home Page]
 <img src="/git/1.png">
 
-![Vacation List](/git/2.png)
+![Vacation List]
 <img src="/git/2.png">
 
-![Vacation Details](/git/3.png)
+![Vacation Details]
 <img src="/git/3.png">
 
-![Order Summary](/git/4.png)
+![Order Summary]
 <img src="/git/4.png">
 
-![Payment](/git/5.png)
+![Payment]
 <img src="/git/5.png">
 
-![My Booking](/git/6.png)
+![My Booking]
 <img src="/git/6.png">
 
 ## Team Members
