@@ -171,6 +171,10 @@ body {
   padding-top: 5px;
 }
 
+#ham {
+  display: none;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .back-video {
     width: 100%;
@@ -197,6 +201,29 @@ body {
   .Alinkss {
     left: 50%; /* Center the links */
     transform: translateX(-50%);
+  }
+}
+/* Media query for screen sizes between 375px and 667px */
+@media screen and (min-width: 375px) and (max-width: 800px) {
+  /* Hide all elements except the logo */
+  .Abox-wrapper .Alinkss,
+  .Abox-wrapper .Alinkss * {
+    display: none;
+  }
+  /* Display only the logo */
+  .Abox-wrapper .Alogoo {
+    display: block; /* Show the logo */
+    margin: 0; /* Center the logo if needed */
+    /* Add any specific styles for the logo here */
+  }
+  #ham {
+    display: block;
+    height: 25px;
+    width: 30px;
+    padding-top: 50px;
+  }
+  .Acontainer {
+    display: none;
   }
 }
 body {
@@ -729,6 +756,18 @@ th {
   height: 100%;
 }
 
+@media screen and (min-width: 375px) and (max-width: 800px) {
+  /* Hide all elements except the logo */
+  #data-list-wrapper {
+    display: none;
+  }
+  .First-part {
+    display: none;
+  }
+  #paginationwrapper {
+    display: none;
+  }
+}
 .mid_section {
   width: 85%;
   margin: 0 auto;

@@ -189,6 +189,9 @@ body {
   padding-top: 5px;
   }
 
+  #ham{
+    display: none;
+  }
   @media(min-aspect-ratio:16/9){
     .back-video{
       width: 100%;
@@ -224,6 +227,34 @@ body {
     transform: translateX(-50%);
   }
 }
+
+/* Media query for screen sizes between 375px and 667px */
+@media screen and (min-width: 375px) and (max-width: 800px) {
+  /* Hide all elements except the logo */
+  .Abox-wrapper .Alinkss,
+  .Abox-wrapper .Alinkss * {
+    display: none;
+  }
+
+  /* Display only the logo */
+  .Abox-wrapper .Alogoo  {
+    display: block; /* Show the logo */
+    margin: 0 ; /* Center the logo if needed */
+    /* Add any specific styles for the logo here */
+  }
+
+   #ham{
+    display: block;
+    height:25px;
+    width:30px;
+    padding-top: 50px;
+    
+  }
+  .Acontainer{
+    display: none;
+  }
+}
+
 
   
   

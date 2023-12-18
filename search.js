@@ -9,6 +9,7 @@ async function fetchData(page, searchData = "") {
         let searchQuery = new URLSearchParams(window.location.search).get("query");
         let res = await fetch(`${url}?_page=${page || 1}&${searchData}&location_like=${searchQuery}`);
         let data = await res.json();
+        searchArea.innerHTML = ""
         appendData(data);
     } catch (err) {
         console.log(err);
@@ -54,10 +55,10 @@ function createCard(data) {
    
    
     card.addEventListener('click', function () {
-        window.location.href = `CardPage.html?id=${data.id}`;
+        window.location.href = `./CardPage.html?location=${data.location}`;
     });
     read.addEventListener('click', function () {
-        window.location.href = `./CardPage.html?id=${data.id}`;
+        window.location.href = `./CardPage.html?location=${data.location}`;
     });
 
     return card;
@@ -90,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = "./registerlogin/login.html";
     });
     Tours.addEventListener('click', function () {
-        window.location.href = "./search.html";
+        window.location.href = "./search.html?query=";
     });
 });
 
@@ -127,6 +128,32 @@ sortByPriceDropdown.addEventListener('change', () => {
     } else if (selectedOption === 'highToLow') {
         sortParam = '_sort=price&_order=desc';
     }
-
+    searchArea.innerHTML = "<h2>Sorting.. Please wait</h2>"
     fetchData(page, '', sortParam);
+    
 });
+
+function sortingByFetch (){fetch(url)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(locations => {
+    // Assuming 'price' is the property you want to sort by
+    const sortedLocations = locations.sort((a, b) => a.price - b.price);
+
+    // Now 'sortedLocations' contains the locations sorted by price
+    console.log(sortedLocations);
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
+}
+
+const sortLowToHighButton = document.getElementById('sortLowToHighButton');
+
+if (sortLowToHighButton) {
+  sortLowToHighButton.addEventListener('click', fetchDataAndSort);
+}
