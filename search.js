@@ -54,10 +54,10 @@ function createCard(data) {
    
    
     card.addEventListener('click', function () {
-        window.location.href = `./CardPage.html?location=${data.location}`;
+        window.location.href = `CardPage.html?id=${data.id}`;
     });
     read.addEventListener('click', function () {
-        window.location.href = `./CardPage.html?location=${data.location}`;
+        window.location.href = `./CardPage.html?id=${data.id}`;
     });
 
     return card;

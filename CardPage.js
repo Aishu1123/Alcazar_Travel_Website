@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const locationId = urlParams.get('id');
 
     if(locationId){
-        fetchLocationDetails(locationId);
+        let data = fetchLocationDetails(locationId);
+        console.log(data);
     }  
     else
     {
@@ -36,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
+var price,mainLocation;
+var data1;
 function fetchLocationDetails(locationId){
 
     const locationDetailsUrl = `https://mock-final-copy-api.onrender.com/locations/${locationId}`;
@@ -50,25 +51,46 @@ function fetchLocationDetails(locationId){
         return response.json();
     })
     .then(data =>{
-        console.log(data);
+        // data1 = data;
+        let imageDiv = document.getElementById("imageDiv")
+        let img = document.createElement("img");
+        img.setAttribute("src",data.image);
+        // img.innerHTML = `src="${data.image}" alt="Hello"
+        // `
+        img.classList.add("imageInsideDiv");
+        imageDiv.append(img);
+        // console.log(img);
+        mainLocation = data.location;
+        price = data.price;
         document.getElementById('location').textContent = data.location;
         document.getElementById('cost-hotel').textContent = `Price: $${data.price}`;
         document.getElementById('location-details').textContent = data.description;
-
+        
+        return data;
     })
     .catch(error => {
         console.error('Error fetching location details:', error);
     });
-
+    
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
-   
+    
     const logoButton = document.getElementById('Alogo');
 
    logoButton.addEventListener('click', function () {
         window.location.href = "./index.html";
     });
 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let logo = document.querySelector(".Rlogo");
+    if (logo) {
+        logo.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    }
+
+   
 });

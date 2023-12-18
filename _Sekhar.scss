@@ -241,6 +241,8 @@ body {
   }
   
   .flex-Done {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     gap: 40%;
@@ -304,4 +306,16 @@ body {
     font-size: 24px;
   }
   
+  #imageDiv{
+    // border: 2px solid red;
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+    margin-top: 80px;
+
+    .imageInsideDiv{
+      width: 100%;
+      height: 100%;
+    }
+  }
   
