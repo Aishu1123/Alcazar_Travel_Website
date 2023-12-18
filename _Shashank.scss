@@ -189,4 +189,16 @@ footer {
         padding-left: -10px;
       }
     }
+    @media screen and (min-width: 375px) and (max-width:800px) {
+      #navbar {
+        display: flex;
+        justify-content: space-around;
+        /* gap:30px; */
+        border: 1px solid black;
+      }
+    
+      #above-footer{
+        display: none;
+      }
+
   
