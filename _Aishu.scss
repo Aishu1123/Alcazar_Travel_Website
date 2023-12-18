@@ -6,6 +6,9 @@ body {
     font-family: Arial, sans-serif;
   }
   
+  #ham{
+    display: none;
+  }
   .Anavbar-div {
     box-sizing: border-box;
     width: 100%;
@@ -213,19 +216,36 @@ body {
   
 
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .Abox-wrapper {
-    height: auto; /* You might want to adjust this based on your design */
+
+
+
+
+
+
+/* Media query for screen sizes between 375px and 667px */
+@media screen and (min-width: 375px) and (max-width: 800px) {
+  /* Hide all elements except the logo */
+  .Abox-wrapper .Alinkss,
+  .Abox-wrapper .Alinkss * {
+    display: none;
   }
 
-  .Alinkss {
-    left: 50%; /* Center the links */
-    transform: translateX(-50%);
+  /* Display only the logo */
+  .Abox-wrapper .Alogoo  {
+    display: block; /* Show the logo */
+    margin: 0 ; /* Center the logo if needed */
+    /* Add any specific styles for the logo here */
+  }
+
+   #ham{
+    display: block;
+    height:25px;
+    width:30px;
+    padding-top: 50px;
+    
   }
 }
 
-  
   
   
   
