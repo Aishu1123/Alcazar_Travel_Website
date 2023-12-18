@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
 body .regform {
   display: flex;
   flex-direction: column;
@@ -100,6 +104,27 @@ body .regform button#log:hover a,
 body .regform #log1:hover,
 body .regform #log1:hover a {
   background-color: rgb(51, 10, 106);
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(208, 194, 194);
+}
+
+nav {
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 91px;
+  box-shadow: 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.5137254902);
+}
+nav a {
+  text-decoration: none;
   color: white;
 }
 

@@ -20,7 +20,7 @@ async function getData(url = `${locationurl}?_page=${page || 1}&_limit=6`) {
     }
 }
 
-let mainSection = document.getElementById("data-list-wrapper");  
+let mainSection = document.getElementById("data-list-wrapperr");  
 
 
 function appendData(data) {
@@ -37,7 +37,7 @@ function createCard(data) {
     card.appendChild(image);
 
     const info = document.createElement('div');
-    info.className = 'info'; 
+    info.className = 'info'; // Change this to 'info'
     
     const heading = document.createElement('h2');
     heading.textContent = data.location;
@@ -59,7 +59,6 @@ function createCard(data) {
   
     info.appendChild(read);
     card.appendChild(info);
-   
    
     card.addEventListener('click', function () {
         window.location.href = `CardPage.html?id=${data.id}`;
@@ -158,3 +157,16 @@ function pagination(total, limit){
 }
 
 
+// 
+
+// function scrollToSection(sectionId) {
+//     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+// }
+
+// // Add click event listeners to navbar links
+// let AboutUs = document.getElementById("AboutUs");
+// AboutUs.addEventListener('click', function() {
+//         // Extract section id from href attribute
+//         var sectionId = link.getAttribute('href').substring(1);
+//         scrollToSection(sectionId);
+//     });

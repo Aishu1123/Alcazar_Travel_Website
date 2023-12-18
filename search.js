@@ -1,3 +1,5 @@
+
+
 const url = 'https://mock-final-copy-api.onrender.com/locations';
 let searchArea = document.getElementById("Search_area");
 let form = document.getElementById("form");
@@ -27,7 +29,7 @@ function createCard(data) {
     card.appendChild(image);
 
     const info = document.createElement('div');
-    info.className = 'info'; 
+    info.className = 'info'; // Change this to 'info'
     
     const heading = document.createElement('h2');
     heading.textContent = data.location;
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const Tours = document.getElementById('tourr');
 
     signupButton.addEventListener('click', function () {
-        window.location.href = "./registerlogin/register.html";
+        window.location.href = "./registerlogin/login.html";
     });
 
     loginButton.addEventListener('click', function () {

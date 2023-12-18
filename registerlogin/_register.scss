@@ -10,6 +10,8 @@ body {
 
 
 .regform {
+    // backdrop-filter: blur(10px);
+    background-color: red;
     margin: 20px auto;
     display: flex;
     flex-direction: column; 

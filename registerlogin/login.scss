@@ -4,6 +4,8 @@
 ////////
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Fira+Sans&family=Noto+Sans+JP:wght@300;400&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;500&family=Young+Serif&display=swap');
 body {
+    margin: 0;
+    padding: 0;
     // background: url(img.jpg);
     // background-size: cover;
     // font-family: 'Poppins', sans-serif;
@@ -11,6 +13,7 @@ body {
 
 
 .regform {
+    // background-color: red;
     // margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -128,10 +131,35 @@ body {
 }
 
 
+nav  a:hover{
+  
+    color: rgb(208, 194, 194);
+       
+    }
 
 
-
-
+    nav {
+        font-weight: bolder;
+        font-size: 17px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        // background-color: rgb(13, 156, 212);
+        height: 91px;
+        box-shadow: 0 0 10px #000;
+        background: #00000083;
+    
+        // background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    
+    }
+    
 
 
 

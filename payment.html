@@ -6,28 +6,44 @@
   <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-  <div class="payment-container">
-    <div class="payment-content">
-      <img src="https://alcazar.vercel.app/payment.png" alt="Payment" class="payment-image">
-      <form class="payment-form">
-        <h2>Make a Payment</h2>
-        <div class="input-group">
-          <label for="cardNumber">Card Number</label>
-          <input type="text" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required>
-        </div>
-        <div class="input-group">
-          <label for="expiryDate">Expiry Date</label>
-          <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-        </div>
-        <div class="input-group">
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" name="cvv" placeholder="xxx" required>
-        </div>
-        <br>
-        <button type="submit" id="payBtn">Pay Now</button>
-      </form>
+
+  
+  <nav>
+    <a href="../index.html"><img src="./Image/logo.png" alt=""></a>
+    <a href="">DownloadAPP</a>
+    <a href="">AboutUs</a>
+    <a href="">Installments</a>
+    <a href="">Tours</a>
+  </nav>
+
+
+  <div id="body">
+
+    <div class="payment-container">
+      <div class="payment-content">
+        <img src="https://alcazar.vercel.app/payment.png" alt="Payment" class="payment-image">
+        <form class="payment-form">
+          <h2>Make a Payment</h2>
+          <div class="input-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required>
+          </div>
+          <div class="input-group">
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+          </div>
+          <div class="input-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="xxx" required>
+          </div>
+          <br>
+          <button type="submit" id="payBtn">Pay Now</button>
+        </form>
+      </div>
     </div>
+
   </div>
+  
 
   <script src="script.js"></script>
   <script>
