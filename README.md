@@ -22,10 +22,10 @@ The website is hosted on Netlify
 
 ## Tech Stack
 
-- Frontend:HTML,CSS,JavaScript
+- Frontend:HTML,CSS,SASS,Bootstrap,JavaScript
 - Backend: Express.js
 - Authentication: JWT
-- Hosting: Vercel
+- Hosting: Netlify
 
 ## Installation
 
@@ -38,7 +38,7 @@ git clone https://github.com/Aishu1123/digital-odyssey-9812.git
 
 ## Screenshots
 
-Here are some screenshots of the Flipkart clone website:
+Here are some screenshots of Alcazar website:
 
 ![Home Page](Images/home.png)
 
