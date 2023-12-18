@@ -1,17 +1,73 @@
-body {
-    margin: 0;
-    padding: 0;
+#body {
+    /* margin: 0; */
+    /* padding: 0; */
     font-family: Arial, sans-serif;
-    background-image: url('https://st4.depositphotos.com/18071024/20132/i/450/depositphotos_201322754-stock-photo-set-metal-hexagons-dark-plane.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-image: url('https://st4.depositphotos.com/18071024/20132/i/450/depositphotos_201322754-stock-photo-set-metal-hexagons-dark-plane.jpg');  */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    /* filter: blur(2px); */
   }
+
+  
+body {
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('./Image/imgforbg.webp');
+  /* background: transparent(80%); */
+  /* filter: brightness(0.9); */
+  /* opacity: 0.5; */
+  /* opacity: 0.5; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Image/imgforbg.webp");
+  background-size: cover;
+  filter: blur(2px); 
+  z-index: -1; 
+}
+
+
+nav  a:hover{
+
+color: rgb(225, 219, 219);
+ 
+}
+nav {
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 91px;
+  box-shadow: 0 0 10px #000;
+  background: #00000083;
+  /* background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%); */
+  
+
+  a {
+      text-decoration: none;
+      color: white;
+  }
+
+}
   
   
   .payment-container {
@@ -24,10 +80,29 @@ body {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    background-color: rgba(8, 87, 83, 0.8); 
+    
+    box-shadow: 0 0 10px #000;
+    background: #0000009b;
+    /* background-color: rgba(8, 87, 83, 0.8);  */
+    /* background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%); */
+    /* box-shadow: 0 0 10px #000; */
+     /* background: #00000083; */
+
     padding: 20px;
     border-radius: 25px;
     width: 1200px;
+  }
+  .payment-content img{
+    /* filter: hue-rotate(180deg); */
+    /* background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%); */
+
+    /* background: linear-gradient(90deg, rgba(83, 95, 220, 1) 1%, rgba(99, 127, 224, 1) 8%, rgba(101, 143, 239, 1) 24%, rgba(138, 157, 229, 1) 47%, rgba(90, 112, 219, 1) 64%, rgba(112, 122, 198, 1) 81%, rgba(76, 137, 225, 1) 100%); */
+  
+  /* Ensure the image is visible on top of the background */
+  z-index: 1;
+  
+  /* Make the image transparent to let the background show through */
+  opacity: 0.8;
   }
   
   .payment-image {
@@ -65,13 +140,15 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    background-color: rgb(230, 219, 219);
+    /* background-color: #007bff; */
+    /* color: ; */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   button:hover {
+    width: 110%;
     background-color: #0056b3;
   }
   

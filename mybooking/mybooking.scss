@@ -1,19 +1,34 @@
 body {
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('solidbg.jpg');
+    // background-image: url('solidbg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1;
-
+    width: 100%;
+    height: 90vh;
 
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Image/imgforbg.webp");
+    background-size: cover;
+    filter: blur(2px); 
+    z-index: -1; 
+  }
 
-
+*{
+    color: white;
+}
 nav  a:hover{
   
-color: rgb(225, 219, 219);
+color: rgb(208, 194, 194);
    
 }
 
@@ -23,7 +38,8 @@ color: rgb(225, 219, 219);
     margin: 20px 0 10px;
     font-weight: bold;
     font-size: 35px;
-    color: rgb(0, 0, 0);
+    color: white;
+    // color: rgb(0, 0, 0);
 }
 
 .rev {
@@ -31,21 +47,25 @@ color: rgb(225, 219, 219);
     // margin: 10px 0 20px;
     font-weight: bold;
     font-size: 28px;
-    color: rgb(8, 8, 8);
+    color: white;
 }
 
 
 
 button {
-    background-color: rgb(31, 147, 193);
-    color: white;
+    // background-color: rgb(146, 7, 0);
+    // background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
+
+    color: black;
     text-decoration: none;
     border: none;
     padding: 10px;
+    // font-style: italic;
 }
 
 button:hover {
-    background-color: rgb(10, 103, 140);
+    background-color: rgb(23, 20, 20);
+    color: white;
 }
 
 .move button {
@@ -54,7 +74,7 @@ button:hover {
 
 td {
     margin: 10px;
-    color: rgb(95, 92, 92);
+    // color: rgb(95, 92, 92);
 }
 
 
@@ -75,9 +95,12 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(13, 156, 212);
-    height: 45px;
+    // background-color: rgb(13, 156, 212);
+    height: 91px;
+    box-shadow: 0 0 10px #000;
+    background: #00000083;
 
+    // background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
 
     a {
         text-decoration: none;
@@ -98,10 +121,13 @@ nav {
 
 
     .leftdet {
-        width: 600px;
+        width: 530px;
         height: 470px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        background-color: white;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        // background-color: white;
+        box-shadow: 0 0 10px #000;
+        background: #00000083;
+    
         border-radius: 20px;
         border: 1px solid rgb(231, 218, 218);
         text-align: center;

@@ -42,3 +42,12 @@
   /* background: blue; */
   transform: rotateY(180deg);
 } 
+
+body.regform {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+}
+input::placeholder {
+  color: black; /* Placeholder text color */
+  /* font-style: italic; Placeholder text style */
+}

@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "main.css"/>
+    <link rel="stylesheet" href="main.css" />
     <title>CardPage</title>
     <link rel="stylesheet" href="./CardPage.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link rel="icon" href= "raja2.ico" type= "image/x-icon">
-    <link rel="shortcut icon" href= "raja2.ico" type="image/x-icon">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="raja2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="raja2.ico" type="image/x-icon">
 </head>
+
 <body>
 
 
-    <div class="Anavbar-div">
-        <div class="Abox-wrapper">
-            <img class="Alogo" src="Image/logo.png" alt="Logo">
-            <div class="Alinks">
-                <a href="#" class="Anav-link">Download App</a>
-                <a href="#" class="Anav-link">About Us</a>
-                <a href="#" class="Anav-link">Installment</a>
-                <a href="#" class="Anav-link">Packages</a>
-                <a href="#" class="Anav-link">My Booking</a>
-                <div class="button-container">
+    <div class="Rnnavbar-div">
+        <div class="Rboxx-wrapper">
+            <img class="Rlogo" src="Image/logo.png" alt="Logo">
+            <div class="Rlinks">
+                <a href="#" class="Rnav-link">Download App</a>
+                <a href="#" class="Rnav-link">About Us</a>
+                <a href="#" class="Rnav-link">Installment</a>
+                <a href="#" class="Rnav-link">Tours</a>
+                <a href="#" class="Rnav-link">My Booking</a>
 
-                    <button class="Anav_button" id="signupButton">Sign Up</button>
-                    <button class="Anav_button" id="loginButton">Login</button>
-                </div>
 
-                <!-- <div class="Anhiddenmenu">
-                    <img src="Image/menu.png" alt="" />
-                  </div> -->
+
             </div>
+
         </div>
     </div>
 
@@ -40,94 +37,95 @@
 
 
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h3 class="offcanvas-title" id="offcanvasRightLabel">Book This Tour</h3>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasRightLabel">Book This Tour</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
 
-    <div class="container" id="FormInsideCanvas">
-        <form>
-            <div class="form-row mb-2">
-                <div class="form-group col-md-12">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
+
+            <div class="container" id="FormInsideCanvas">
+                <form>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-12">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-12">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="form-group col-md-12">
+                            <label for="type">Type</label>
+                            <select id="type" class="form-control">
+                                <option selected>Type</option>
+                                <option>Normal</option>
+                                <option>Premium</option>
+                                <option>Semi-Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="form-group col-md-12">
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" placeholder="Your Contact Number">
+                        </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="form-group col-md-12">
+                            <label for="numGuests">Number of Guests</label>
+                            <input type="number" class="form-control" id="numGuests" placeholder="Number of Guests">
+                        </div>
+                    </div>
+                    <div class="form-group form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="confirmationCheck">
+                        <label class="form-check-label" for="confirmationCheck">I confirm my reservation</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="SubmitBookingForm">Submit</button>
+                </form>
             </div>
-            <div class="form-row mb-2">
-                <div class="form-group col-md-12">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                </div>
-            </div>
-            <div class="form-row mb-2">
-                <div class="form-group col-md-12">
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date">
-                </div>
-            </div>
-            <div class="form-row mb-3">
-                <div class="form-group col-md-12">
-                    <label for="type">Type</label>
-                    <select id="type" class="form-control">
-                        <option selected>Type</option>
-                        <option>Normal</option>
-                        <option>Premium</option>
-                        <option>Semi-Premium</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-row mb-3">
-                <div class="form-group col-md-12">
-                    <label for="contactNumber">Contact Number</label>
-                    <input type="tel" class="form-control" id="contactNumber" placeholder="Your Contact Number">
-                </div>
-            </div>
-            <div class="form-row mb-3">
-                <div class="form-group col-md-12">
-                    <label for="numGuests">Number of Guests</label>
-                    <input type="number" class="form-control" id="numGuests" placeholder="Number of Guests">
-                </div>
-            </div>
-            <div class="form-group form-check mb-2">
-                <input type="checkbox" class="form-check-input" id="confirmationCheck">
-                <label class="form-check-label" for="confirmationCheck">I confirm my reservation</label>
-            </div>
-            <button type="submit" class="btn btn-primary" id="SubmitBookingForm">Submit</button>
-        </form>
+
+        </div>
     </div>
-    
 
 
+    <!--  -->
 
-  </div>
-</div>
+    <div class="flex-Done">
+        <div class="flex-box-info">
+            <div id="location-price">
+                <h4 id="location"
+                    style="font-family :system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 30px; margin-left: 30px; margin-top: 34px;">
 
+                </h4>
+                <p id="cost-hotel"
+                    style=" text-align: center; border-radius: 8px; background-color: rgb(225, 230, 195); font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 90px;  padding : 3px; margin-top: 40px; ">
 
-<!--  -->
+                </p>
+            </div>
 
-         <div class = "flex-Done"> 
-            <div class = "flex-box-info">
-                <div id = "location-price">
-                    <h4 id = "location" style = "font-family: Arial, Helvetica, sans-serif; font-size: 30px; margin-left: 30px;">
-                       
-                    </h4>
-                   <p id = "cost-hotel" style =  " text-align: center; border-radius: 8px; background-color: rgb(210, 205, 205); font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 70px; margin-right: -50px;  margin-top: 40px; ">
-                     
-                   </p>
+            <div id="location-details"
+                style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 20px; margin-left: 30px;">
+
+            </div>
+            <div class="information">
+                <div id="info" style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; margin-left: 30px;">
+                    <img src="i.png" alt="i">
+                    <div style="font-size: 20px; ">INFORMATION</div>
                 </div>
-    
-               <div id = "location-details" style = "font-family: Arial, Helvetica, sans-serif; font-size: 17px; margin: 20px; margin-left: 40px;">
-                    
-               </div>
-               <div class = "information">
-                <div id = "info" style = "font-family: Arial, Helvetica, sans-serif; font-size: 25px; margin-left: 40px;">
-                    <img src = "i.png" alt = "i">
-                   <div style="font-size: 20px;">INFORMATION</div>
-                </div>
-                 <table style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px; margin-top: 40px; margin-left: 40px; ">
+                <table
+                    style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px; margin-top: 40px; margin-left: 30px; ">
                     <tr>
                         <th>Information</th>
                         <th>Details</th>
@@ -149,17 +147,16 @@
                         <td>Appr. 7.30PM</td>
                     </tr>
                 </table>
-            
-                <table style=" margin: 40px; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px;">
+
+                <table
+                    style=" margin: 40px; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; font-size: 20px;">
                     <tr>
                         <th>Included</th>
                     </tr>
                     <tr>
                         <td>
-
-                            <ul style = "margin: 25px;" class="included-list" >
+                            <ul style="margin: 25px;" class="included-list">
                                 <li>5Star Hotels</li>
-
                                 <li>Airport Transfer</li>
                                 <li>Breakfast</li>
                                 <li>Personal Guide</li>
@@ -167,92 +164,97 @@
                         </td>
                     </tr>
                 </table>
-               </div>
-               <p style="margin: 40px; font-size: 40px;">Gallery</p>
-              <div class = "location-rel-images">
-               
-                <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://media.cnn.com/api/v1/images/stellar/prod/170523170835-venice-1718664.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618" alt = "italy">
-                <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://www.roadaffair.com/wp-content/uploads/2017/10/kabukicho-tokyo-japan-shutterstock_637989430.jpg" alt = "japan">
-                <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://static.toiimg.com/photo/msid-102101595,width-96,height-65.cms" alt = "morocco">
-                <img style = "height: 200px; width : 200px; margin: 20px;" src = "https://i.natgeofe.com/k/4a509698-ab53-4581-af61-4c4808a81a76/netherlands-tulip-fields.jpg?w=108.125&h=100" alt = "netherlands">
-              </div>
-            
             </div>
-              
-            <div class = "right-part-disco">
-                <!-- Pop up card btn -->
-                <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="book-now">Book Now</button>
-                <button style = " font-size: 30px; padding: 10px; color: black; border: solid 1px transparent; background-color: skyblue; border-radius: 15px; font-family: Arial, Helvetica, sans-serif; ">
-                    Book Now
-                </button>
-                <div class = "discount">
-                    <img style = "justify-content: right; height :200px; width : 200px; margin-top: -10px; " src = "https://img.freepik.com/premium-vector/sale-offer-label-banner-discount-offer-promotion_157027-1265.jpg" alt = "discount">
-                    <p> 50 % OFF on Masai 50</p>
+            <p style="margin: 40px; font-size: 40px;">Gallery</p>
+            <div class="location-rel-images">
+
+                <img style="height: 200px; width : 200px; margin: 20px;"
+                    src="https://media.cnn.com/api/v1/images/stellar/prod/170523170835-venice-1718664.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618"
+                    alt="italy">
+                <img style="height: 200px; width : 200px; margin: 20px;"
+                    src="https://www.roadaffair.com/wp-content/uploads/2017/10/kabukicho-tokyo-japan-shutterstock_637989430.jpg"
+                    alt="japan">
+                <img style="height: 200px; width : 200px; margin: 20px;"
+                    src="https://static.toiimg.com/photo/msid-102101595,width-96,height-65.cms" alt="morocco">
+                <img style="height: 200px; width : 200px; margin: 20px;"
+                    src="https://i.natgeofe.com/k/4a509698-ab53-4581-af61-4c4808a81a76/netherlands-tulip-fields.jpg?w=108.125&h=100"
+                    alt="netherlands">
+            </div>
+
+        </div>
+
+        <div class="right-part-disco">
+            <!-- Pop up card btn -->
+            <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="book-now">Book Now</button>
+            <div class="discount">
+                <img style="justify-content: right; height :200px; width : 200px; margin-top: -10px; "
+                    src="https://img.freepik.com/premium-vector/sale-offer-label-banner-discount-offer-promotion_157027-1265.jpg"
+                    alt="discount">
+                <p> 50 % OFF on Masai 50</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="noo">
+            <div id="no">
+                <div id="alca">
+
+                    <img src="Image/logo.png" alt="Alcazar" />
+                  
+
+                </div>
+                <p>
+                    Convenience is our priority to satisfy our <br>
+                    Customers and we provide all the <br>
+                    features you can use easily and quickly.
+                </p>
+            </div>
+
+            <div id="yess">
+                <div class="yes">
+                    <h3>About</h3>
+                    <p>How to Book</p>
+                    <p>Contact Us</p>
+                    <p>Help Center</p>
+                </div>
+
+                <div class="yes">
+                    <h3>Products</h3>
+                    <p>Destination</p>
+                    <p>Flight</p>
+                    <p>lodging</p>
+                </div>
+
+                <div class="yes">
+                    <h3>Social</h3>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
                 </div>
             </div>
         </div>
 
-  
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const urlParams = new URLSearchParams(window.location.search);
-                console.log(urlParams);
-                const locationId = urlParams.get('id');
+        <hr>
+        <div id="end">
+            <p>Privacy Policy</p>
+            <p2>Copyright © 2022 Alcazar</p2>
+        </div>
+    </footer>
 
 
-                if(locationId){
-                    fetchLocationDetails(locationId);
-                }
-                else{
-                    console.error('Location ID not found in URL parameters');
-                }
-            });
-            var particularData;
 
-
-            function fetchLocationDetails(locationId){
-                const locationDetailsUrl = `https://mock-api-templated-copy.onrender.com/locations/${locationId}`;
-
-                fetch(locationDetailsUrl)
-                .then(response => {
-                    if(!response.ok){
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .then(data =>{
-                    console.log(data);
-                    particularData = data;
-                    document.getElementById('location').textContent = data.location;
-                    document.getElementById('cost-hotel').textContent = `Price: $${data.price}/PER PERSON`;
-                    document.getElementById('location-details').textContent = data.description;
-
-                })
-                .catch(error => {
-                    console.error('Error fetching location details:', error);
-                });
-            }
-            console.log(data);
-        </script>
-       
-
-
-<script src="./CardPage.js"></script>
-<!-- Added Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="CardPage.js"></script>
+   
+    <!-- Added Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

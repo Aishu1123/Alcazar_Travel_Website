@@ -62,7 +62,8 @@
         margin-top: 20px;
         width: 130px;
         padding: 10px;
-        background-color: rgb(28, 160, 227);
+        background: linear-gradient(90deg, rgba(83,95,220,1) 1%, rgba(99,127,224,1) 8%, rgba(101,143,239,1) 24%, rgba(138,157,229,1) 47%, rgba(90,112,219,1) 64%, rgba(112,122,198,1) 81%, rgba(76,137,225,1) 100%);
+     
         border-radius: 30px;
         color: white;
         font-size: 16px;
@@ -72,7 +73,7 @@
         
       }
       .cta-button:hover{
-        background-color: red;
+        background:black;
         width: 145px;
       }
   
