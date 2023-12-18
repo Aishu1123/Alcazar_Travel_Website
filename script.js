@@ -1,26 +1,38 @@
 
 const locationurl = 'https://mock-final-copy-api.onrender.com/locations';
 
+let currentPage = 1;
 
 
-async function getData(url = `${locationurl}?_page=${page || 1}&_limit=6`) {
+async function getData(url = `${locationurl}?_page=${currentPage}&_limit=6`) {
 
     try {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
+        const totalCountHeader = response.headers.get('X-Total-Count');
+        const totalCount = totalCountHeader ? parseInt(totalCountHeader, 10) : 0;
+
         const data = await response.json();
         mainSection.innerHTML = "";
         console.log(data);
           appendData(data);
-          pagination(35, 6);
+          
+          if (totalCount > 0) {
+            pagination(totalCount, 6);
+          }
+          else {
+            currentPage = Math.max(1, currentPage - 1);
+          }
+         
     } catch (error) {
         console.error('Error fetching data:', error);
     }
 }
 
-let mainSection = document.getElementById("data-list-wrapper");  
+let mainSection = document.getElementById("data-list-wrapperr");  
 
 
 function appendData(data) {
@@ -79,7 +91,7 @@ function filterData(){
 let filterbuttonAll = document.getElementById('blue-btn');
 
 filterbuttonAll.addEventListener('click', () =>{
-    getData(`${locationurl}?_page=${page || 1}&_limit=6`);
+    getData(`${locationurl}?_page=${currentPage}&_limit=6`);
   })
 }
 
@@ -90,7 +102,7 @@ function Trendingbutton(){
 
     Trendingfilter.addEventListener('click', () =>{
 
-       let url =  `${locationurl}?_page=${page}&_limit=6&price_lte=2000`;
+       let url = `${locationurl}?_page=${currentPage}&_limit=6&price_lte=2000`;
 
         getData(url);
 
@@ -104,8 +116,7 @@ function Popularbutton() {
     
     Popularfilter.addEventListener('click', () =>{
        
-    let url = `${locationurl}?_page=${page}&_limit=6&price_lte=3000`;
-
+    let url = `${locationurl}?_page=${currentPage}&_limit=6&price_lte=3000`;
     getData(url);
     
 });
@@ -117,8 +128,7 @@ function Recommendbutton(){
     let Recommendfilter = document.getElementById('recommend');
 
     Recommendfilter.addEventListener('click', () =>{
-        let url = `${locationurl}?_page=${page}&_limit=6&price_gte=3000&price_lt=5000`;
-
+        let url = `${locationurl}?_page=${currentPage}&_limit=6&price_gte=3000&price_lt=5000`;
         getData(url);
     });
 }
@@ -128,7 +138,7 @@ function Premiumbutton(){
     let Tourfilter = document.getElementById('premium');
 
     Tourfilter.addEventListener('click', () =>{
-        let url = `${locationurl}?_page=${page}&_limit=6&price_lte=5000`;
+        let url = `${locationurl}?_page=${currentPage}&_limit=6&price_gte=5000`;
 
         getData(url);
       
@@ -152,7 +162,8 @@ function pagination(total, limit){
         button.textContent = i;
         paginationWrapper.append(button);
         button.addEventListener('click', ()=>{
-            getData(`${locationurl}?_page=${i}&_limit=6`);
+            currentPage = i;
+            getData(`${locationurl}?_page=${currentPage}&_limit=6`);
         })
     }
 }
