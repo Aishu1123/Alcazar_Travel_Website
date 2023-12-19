@@ -1,0 +1,243 @@
+{
+
+  "locations" :
+  
+  [
+{
+"id": "1",
+"image": "https://cdn.britannica.com/64/153464-050-551A86F7/Rialto-Bridge-Grand-Canal-Venice.jpg",
+"location": "Rialto Bridge, Italy",
+"price": "6699",
+"description": "The Rialto Bridge is the oldest of the four bridges spanning the Grand Canal in Venice, Italy. Connecting the sestieri of San Marco and San Polo, it has been rebuilt several times since its first construction as a pontoon bridge in 1173, and is now a significant tourist attraction in the city."
+},
+{
+"id": "2",
+"image": "https://cdn2.wanderlust.co.uk/media/1007/cropped-toy-train.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=131665359440000000",
+"location": "National Park Station",
+"price": "7711",
+"description": "Interesting journey in america by presenting very Park Arches National Park lies north of Moab in the state of Utah. Bordered by the Colorado River in the southeast, it's known as the site of more than 2,000 natural sandstone arches, such as the massive, red-hued Delicate Arch in the east."
+},
+{
+"id": "3",
+"image": "https://a0.muscache.com/im/pictures/4a5c629b-9c92-450e-8d8f-995875798838.jpg?im_w=720",
+"location": "Prahu Canaoe,Bali Indonesia",
+"price": "8822",
+"description": "Explore the beautiful beaches of Bali with this amazing package."
+},
+{
+"id": "4",
+"image": "https://www.moroccotoptrips.com/wp-content/uploads/2022/06/merzouga-desert-camp-1024x629.png",
+"price": "6699",
+"description": "If you are going to Morocco, visiting the Sahara Desert should be at the top of your bucket list. The tranquillity and infinite beauty of the rose gold Morocco sand dunes is like nothing else on earth."
+},
+{
+"id": "5",
+"image": "https://assets.palmspringslife.com/wp-content/uploads/2017/03/13103531/san-jacinto.png",
+"price": "5522",
+"description": " Tucked away in the desert inland from Los Angeles and San Diego, Palm Springs offers a relaxing desert getaway with a rich history."
+},
+{
+"id": "6",
+"image": "https://assets3.thrillist.com/v1/image/3109501/1200x600/scale;;webp=auto;jpeg_quality=85.jpg",
+"location": "Cappadocia turki",
+"price": "8088",
+"description": " Tucked away in the desert inland from Los Angeles and San Diego, Palm Springs offers a relaxing desert getaway with a rich history."
+},
+{
+"id": "7",
+"image": "https://www.travelandleisure.com/thmb/VscfMXHNO6uBpaX2cuIW1q2ZtA8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tokyo-japan-TOKYOTG0621-52012ff551dc46c4a87ac8e3151307a4.jpg",
+"location": "Tokyo, Japan",
+"price": "2000",
+"description": "Experience the vibrant culture of Tokyo in this exciting tour."
+},
+{
+"id": "8",
+"image": "https://www.andbeyond.com/wp-content/uploads/sites/5/A-tender-moment-between-Lioness-and-cub.jpg",
+"location": "Kruger National Park, South Africa",
+"price": "1800",
+"description": "Embark on a thrilling safari adventure in Kruger National Park."
+},
+{
+"id": "9",
+"image": "https://pk.visamiddleeast.com/dam/VCOM/regional/cemea/generic-cemea/travel-with-visa/destinations/paris/marquee-travel-paris-800x450.jpg",
+"location": "Paris, France",
+"price": "2500",
+"description": "Fall in love with the romantic streets and iconic landmarks of Paris."
+},
+{
+"id": "10",
+"image": "https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg",
+"location": "New York City, USA",
+"price": "2200",
+"description": "Discover the energy and diversity of the Big Apple in this city tour."
+},
+{
+"id": "11",
+"image": "https://images.squarespace-cdn.com/content/v1/55ee34aae4b0bf70212ada4c/1577545161018-1F9Z9ZZQG9JO2O4WCWQX/keith-zhu-qaNcz43MeY8-unsplash+%281%29.jpg?format=1500w",
+"location": "Sydney, Australia",
+"price": "1900",
+"description": "Experience the vibrant city life and stunning beaches of Sydney."
+},
+{
+"id": "12",
+"image": "https://www.spain.info/.content/imagenes/cabeceras-grandes/cataluna/park-guell-barcelona-s-305364611.jpg",
+"location": "Barcelona, Spain",
+"price": "2300",
+"description": "Immerse yourself in the art and architecture of Barcelona."
+},
+{
+"id": "13",
+"image": "https://www.lovebigisland.com/wp-content/uploads/hana-highway.jpg",
+"location": "Maui, Hawaii",
+"price": "2800",
+"description": "Relax and rejuvenate on the breathtaking beaches of Maui."
+},
+{
+"id": "14",
+"image": "https://cdn.britannica.com/03/94403-050-03683FB0/Rio-de-Janeiro-Braz.jpg",
+"location": "Rio de Janeiro, Brazil",
+"price": "2100",
+"description": "Experience the vibrant Carnival spirit in Rio de Janeiro."
+},
+{
+"id": "15",
+"image": "https://cdn.britannica.com/30/180130-138-4FC01CDD/Overview-Amsterdam.jpg?w=800&h=450&c=crop",
+"location": "Amsterdam, Netherlands",
+"price": "2400",
+"description": "Discover the charm of Amsterdam's canals and historic sites."
+},
+{
+"id": "16",
+"image": "https://i0.wp.com/exploringkiwis.com/wp-content/uploads/2018/11/peru-2774925_1920.jpg?fit=1020%2C680&ssl=1",
+"location": "Machu Picchu, Peru",
+"price": "3000",
+"description": "Embark on a once-in-a-lifetime journey to the ancient ruins of Machu Picchu."
+},
+{
+"id": "17",
+"image": "https://a.cdn-hotels.com/gdcs/production81/d94/cf4b5dbc-bbe8-4693-8240-ebec54aaf0de.jpg?impolicy=fcrop&w=800&h=533&q=medium",
+"location": "Dubai, United Arab Emirates",
+"price": "2700",
+"description": "Experience luxury and opulence in the futuristic city of Dubai."
+},
+{
+"id": "18",
+"image": "https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75",
+"location": "Santorini, Greece",
+"price": "3200",
+"description": "Indulge in the breathtaking beauty and romantic atmosphere of Santorini."
+},
+{
+"id": "19",
+"image": "https://www.peruforless.com/content-files/uploads/social-media/og-cusco.jpg",
+"location": "Cusco, Peru",
+"price": "2800",
+"description": "Explore the historical treasures and vibrant culture of Cusco."
+},
+{
+"id": "20",
+"image": "https://www.holidify.com/images/bgImages/ISTANBUL.jpg",
+"location": "Istanbul, Turkey",
+"price": "2600",
+"description": "Immerse yourself in the rich history and fascinating culture of Istanbul."
+},
+{
+"id": "21",
+"image": "https://www.tripsavvy.com/thmb/zO0A95oa05QOXLnAcfX9Al11dts=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-906759050-2184f8cd91e94f749b7251a37575ef23.jpg",
+"location": "Maasai Mara, Kenya",
+"price": "3500",
+"description": "Witness the incredible wildlife and stunning landscapes of Maasai Mara."
+},
+{
+"id": "22",
+"image": "https://www.holidify.com/images/bgImages/BANGKOK%20.jpg",
+"location": "Bangkok, Thailand",
+"price": "1800",
+"description": "Experience the vibrant street markets and ornate temples of Bangkok."
+},
+{
+"id": "23",
+"image": "https://content.api.news/v3/images/bin/7d98c5e4bb3b7f29d9d73c781d209882",
+"location": "Reykjavik, Iceland",
+"price": "3200",
+"description": "Discover the otherworldly landscapes and natural wonders of Reykjavik."
+},
+{
+"id": "24",
+"image": "https://www.india-briefing.com/news/wp-content/uploads/2013/07/India-Briefing-Economy-of-Mumbai-Indias-Major-Commercial-Hub.jpg",
+"location": "Mumbai, India",
+"price": "2500",
+"description": "Experience a wide range of Mumbai tours like the Mumbai sightseeing tour, Dharavi slum tour, Elephanta caves tour, Mumbai food tour, and many more."
+},
+{
+"id": "25",
+"image": "https://blog.goway.com/globetrotting/wp-content/uploads/2018/05/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-_1017748333.jpg",
+"location": "Kyoto, Japan",
+"price": "2800",
+"description": "Explore the serene temples and traditional gardens of Kyoto."
+},
+{
+"id": "26",
+"image": "https://www.travelandleisure.com/thmb/zFpjulihpXjpUV7gKNHzydvJANA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vienna-austria-VIENNATG0621-ecb0ee926c2d49c4bce610db594f7405.jpg",
+"location": "Vienna, Austria",
+"price": "2200",
+"description": "Immerse yourself in the classical music and imperial history of Vienna."
+},
+{
+"id": "27",
+"image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/1e/cape-town.jpg?w=700&h=-1&s=1",
+"location": "Cape Town, South Africa",
+"price": "3200",
+"description": "Experience the breathtaking beauty and cultural diversity of Cape Town."
+},
+{
+"id": "28",
+"image": "https://www.travelandleisure.com/thmb/oNo7zAZGMDBGXiegpzjfIc5IUsg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-circulo-de-bella-artes-TODOMADRID0723-45c9757f16f54de6861984cf82ae4034.jpg",
+"location": "Madrid, Spain",
+"price": "2700",
+"description": "Immerse yourself in the art and architecture of Madrid."
+},
+{
+"id": "29",
+"image": "https://www.travelandleisure.com/thmb/RQ3JmT8V2y2fhwr7NY0cgUumcCE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/phuket-thailand-karst-formation-phuket0327-92bd3ce9266148dba74cba5e36c711e2.jpg",
+"location": "Phuket, Thailand",
+"price": "2100",
+"description": "Relax on the stunning beaches and enjoy the vibrant nightlife of Phuket."
+},
+{
+"id": "30",
+"image": "https://cdn.britannica.com/44/102444-050-7260C54D/Zurich-Switzerland.jpg",
+"location": "Zurich, Switzerland",
+"price": "3200",
+"description": "Experience the stunning landscapes and sophisticated city life of Zurich."
+},
+{
+"id": "31",
+"image": "https://assets.editorial.aetnd.com/uploads/2017/08/jerusalem-gettyimages-1239997543.jpg",
+"location": "Jerusalem, Israel",
+"price": "2400",
+"description": "Explore the historical sites and religious significance of Jerusalem."
+},
+{
+"id": "32",
+"image": "https://a.cdn-hotels.com/gdcs/production92/d1146/87b98bdb-666a-4ae3-964a-5872d4580ef4.jpg",
+"location": "Florence, Italy",
+"price": "3000",
+"description": "Discover the art, culture, and delicious cuisine of Florence."
+},
+{
+"id": "33",
+"image": "https://cdn.britannica.com/07/192407-050-548620BE/Sunset-view-Chiang-Mai-Thailand.jpg",
+"location": "Chiang Mai, Thailand",
+"price": "1900",
+"description": "Experience the rich history and traditional charm of Chiang Mai."
+},
+{
+"id": "34",
+"image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Pahalgam_views_13.JPG",
+"location": "Pahalgam, Jammu and Kashmir",
+"price": "3200",
+"description": "Pahalgam is a hill station in the north Indian state of Jammu and Kashmir. Overa Aru Wildlife Sanctuary is home to animals including brown bears and musk deer. Northeast, the Lidder River runs through scenic Betaab Valley."
+}
+]
+}
