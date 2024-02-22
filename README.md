@@ -1,5 +1,5 @@
 
-## Description
+## description
 Alcazar is your go-to online vacation booking website, designed to make your travel dreams a reality. Our platform offers a wide array of destinations and accommodations, ensuring that you find the perfect match for your ideal getaway. Whether you're longing for a sun-soaked beach retreat, an adrenaline-pumping adventure, or a culturally immersive city escape, Alcazar has an extensive range of options to suit every traveler's taste. Our user-friendly interface makes it effortless to search, compare, and book your dream vacation package, ensuring a seamless and stress-free experience. With Alcazar, you can trust that you're getting the best deals and top-notch customer service. We're dedicated to ensuring your journey is not just a trip, but an unforgettable experience filled with cherished memories. Let Alcazar be your guide as you embark on your next unforgettable adventure.
 
 ## Features
