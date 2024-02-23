@@ -41,7 +41,7 @@ var price,mainLocation;
 var data1;
 function fetchLocationDetails(locationId){
 
-    const locationDetailsUrl = `https://mock-final-copy-api.onrender.com/locations/${locationId}`;
+    const locationDetailsUrl = `https://mock-api-alcazar.onrender.com/locations/${locationId}`;
 
     fetch(locationDetailsUrl)
     .then(response =>{
