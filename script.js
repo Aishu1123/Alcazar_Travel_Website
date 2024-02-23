@@ -157,7 +157,7 @@
 // }
 
 
-const locationurl = 'https://mock-final-copy-api.onrender.com/locations';
+const locationurl = 'https://mock-api-alcazar.onrender.com/locations';
 
 let currentPage = 1;
 
