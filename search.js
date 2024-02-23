@@ -1,6 +1,6 @@
 
 
-const url = 'https://mock-final-copy-api.onrender.com/locations';
+const url = 'https://mock-api-alcazar.onrender.com/locations';
 let searchArea = document.getElementById("Search_area");
 let form = document.getElementById("form");
 
